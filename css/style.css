@@ -1,0 +1,182 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+    font-family: 'primeregular';
+    src: url('font/prime_regular-webfont.eot');
+    src: url('font/prime_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/prime_regular-webfont.woff') format('woff'),
+         url('font/prime_regular-webfont.ttf') format('truetype'),
+         url('font/prime_regular-webfont.svg#primeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+html,body {
+	font-family: 'primeregular';
+	width: 100%;
+	height: 100%;
+}
+.navigation {
+	position: fixed;
+	z-index: 1;
+	background: rgba(255, 255, 255, 0.2);
+	padding: 20px;
+}
+.navigation li {
+	width: 10px;
+	height: 10px;
+	border-radius: 5px;
+	margin: 0 auto;
+	position: relative;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	-ms-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+	margin-bottom: 25px;
+}
+.download {
+	background: url(../images/download.png) no-repeat;
+	position: fixed;
+	right: 50px;
+	top: 20px;
+	height: 32px;
+	z-index: 1;
+	color: #fff;
+	text-decoration: none;
+	padding-top: 30px;
+	text-align: center;
+	width: 70px;
+	background-position: center -3px;
+}
+.navigation li:hover,.navigation li.active {
+	background-color: #fff !important;
+	cursor: pointer;
+}
+.arrow {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+	background-image: url(../images/arrow.png);
+	-webkit-background-size: 64px;
+	-moz-background-size: 64px;
+	background-size: 64px;
+	background-position: center 600px !important;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+.slide {
+	background-attachment: fixed;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+#slide1 {
+	background-image: url(../images/prime01.png);
+	background-color: #1a1a1a;
+	background-repeat: no-repeat;
+	background-position: center !important;
+	-webkit-background-size: 700px 300px;
+	-moz-background-size: 700px 300px;
+	background-size: 700px 300px;
+}
+#slide2 {
+	background-image: url(../images/prime02.png);
+	background-color: #ffee00;
+	background-repeat: no-repeat;
+	background-position: center !important;
+	-webkit-background-size: 700px 644px;
+	-moz-background-size: 700px 644px;
+	background-size: 700px 644px;
+}
+#slide3 {
+	background-image: url(../images/prime03.png);
+	background-repeat: no-repeat;
+	background-position: center !important;
+	-webkit-background-size: 700px 496px;
+	-moz-background-size: 700px 496px;
+	background-size: 700px 496px;
+	background-color: #1b1b1b;
+}
+#slide4 {
+	background-image: url(../images/prime04.png);
+	background-color: #191919;
+	background-repeat: no-repeat;
+	background-position: center !important;
+	-webkit-background-size: 700px 568px;
+	-moz-background-size: 700px 568px;
+	background-size: 700px 568px;
+}
+#slide5 {
+	background-image: url(../images/prime05.png);
+	background-color: #ffee00;
+	background-repeat: no-repeat;
+	background-position: center !important;
+	-webkit-background-size: 700px 449px;
+	-moz-background-size: 700px 449px;
+	background-size: 700px 449px;
+}
+#slide6 {
+	background-image: url(../images/prime06.png);
+	background-color: #191919;
+	background-repeat: no-repeat;
+	background-position: center !important;
+	-webkit-background-size: 700px 700px;
+	-moz-background-size: 700px 700px;
+	background-size: 700px 700px;
+}
+#slide7 {
+	background-image: url(../images/prime07.png);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	height: 100% !important;
+	width: 100% !important;
+}
+#slide8 {
+	background-image: url(../images/prime08.png);
+	background-color: #ffee00;
+	background-repeat: no-repeat;
+	background-position: center !important;
+	-webkit-background-size: 700px 449px;
+	-moz-background-size: 700px 449px;
+	background-size: 700px 449px;
+}
+#slide9 {
+	background-image: url(../images/prime09.png);
+	background-color: #191919;
+	background-repeat: no-repeat;
+	background-position: center !important;
+	-webkit-background-size: 700px 1150px;
+	-moz-background-size: 700px 1150px;
+	background-size: 700px 1150px;
+}
+#slide10 {
+	background-image: url(../images/prime10.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	height: 100% !important;
+	width: 100% !important;
+}
+#slide11 {
+	background-image: url(../images/prime11.png);
+	background-color: #191919;
+	background-repeat: no-repeat;
+	background-position: center !important;
+	-webkit-background-size: 700px 649px;
+	-moz-background-size: 700px 649px;
+	background-size: 700px 649px;
+}
+#slide12 {
+	background-image: url(../images/prime12.png);
+	background-color: #191919;
+	background-repeat: no-repeat;
+	background-position: center !important;
+	-webkit-background-size: 700px 649px;
+	-moz-background-size: 700px 649px;
+	background-size: 700px 649px;
+}
