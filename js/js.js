@@ -82,9 +82,41 @@ jQuery(document).ready(function ($) {
     });*/
     //waypoints doesnt detect the first slide when user scrolls back up to the top so we add this little bit of code, that removes the class 
     //from navigation link slide 2 and adds it to navigation link slide 1. 
+
+    function viewport()
+    {
+        var e = window, a = 'inner';
+        if (!('innerWidth' in window))
+        {
+            a = 'client';
+            e = document.documentElement || document.body;
+        }
+        return { width : e[ a+'Width' ] , height : e[ a+'Height' ] }
+    }
+
+    // Retrieve the height of the document, including padding, margin and border
+    var documentHeight = $(document).outerHeight(true);
+    var viewPortData = viewport();
+
+    var maxScrollTop = documentHeight - viewPortData.height;
+
+
+
     mywindow.scroll(function () {
-        console.log(mywindow.scrollTop());
-        if (mywindow.scrollTop() == 0) {
+        if(mywindow.scrollTop() == maxScrollTop) {
+            $('.navigation li[data-slide="5"]').addClass('active');
+            $('.navigation li[data-slide="1"]').removeClass('active');
+            $('.navigation li[data-slide="2"]').removeClass('active');
+            $('.navigation li[data-slide="3"]').removeClass('active');
+            $('.navigation li[data-slide="4"]').removeClass('active');
+
+            $('.nav_list span[data-slide="5"]').addClass('on');
+            $('.nav_list span[data-slide="1"]').removeClass('on');
+            $('.nav_list span[data-slide="2"]').removeClass('on');
+            $('.nav_list span[data-slide="3"]').removeClass('on');
+            $('.nav_list span[data-slide="4"]').removeClass('on');
+        }
+        else if (mywindow.scrollTop() == 0) {
             $('.navigation li[data-slide="1"]').addClass('active');
             $('.navigation li[data-slide="2"]').removeClass('active');
             $('.navigation li[data-slide="3"]').removeClass('active');
@@ -123,7 +155,7 @@ jQuery(document).ready(function ($) {
             $('.nav_list span[data-slide="4"]').removeClass('on');
             $('.nav_list span[data-slide="5"]').removeClass('on');
         }
-        else  if (mywindow.scrollTop() < 3805) {
+        else  if (mywindow.scrollTop() < 3795 && mywindow.scrollTop() > 2767) {
             $('.navigation li[data-slide="4"]').addClass('active');
             $('.navigation li[data-slide="1"]').removeClass('active');
             $('.navigation li[data-slide="2"]').removeClass('active');
@@ -192,7 +224,7 @@ jQuery(document).ready(function ($) {
         }, time);
     }
     
-	//keyboard  scroll easing
+    //keyboard  scroll easing
     $(document).keydown(function (e) {
         switch (e.which) {
             //up
