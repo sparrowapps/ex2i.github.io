@@ -142,7 +142,7 @@ jQuery(document).ready(function ($) {
             $('.nav_list span[data-slide="4"]').removeClass('on');
             $('.nav_list span[data-slide="5"]').removeClass('on');
         }
-        else  if (mywindow.scrollTop() < 2767) {
+        else  if (mywindow.scrollTop() < 2616) {
             $('.navigation li[data-slide="3"]').addClass('active');
             $('.navigation li[data-slide="1"]').removeClass('active');
             $('.navigation li[data-slide="2"]').removeClass('active');
@@ -155,7 +155,7 @@ jQuery(document).ready(function ($) {
             $('.nav_list span[data-slide="4"]').removeClass('on');
             $('.nav_list span[data-slide="5"]').removeClass('on');
         }
-        else  if (mywindow.scrollTop() < 3795 && mywindow.scrollTop() > 2767) {
+        else  if (mywindow.scrollTop() < 3644 && mywindow.scrollTop() > 2616) {
             $('.navigation li[data-slide="4"]').addClass('active');
             $('.navigation li[data-slide="1"]').removeClass('active');
             $('.navigation li[data-slide="2"]').removeClass('active');
