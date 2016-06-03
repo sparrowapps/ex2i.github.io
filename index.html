@@ -278,6 +278,16 @@ oLabel.setVisible(false);
 } 
 });
 
+oMap.attach('click', function(oCustomEvent) {
+    var oPoint = oCustomEvent.point;
+    var oTarget = oCustomEvent.target;
+    oInfoWnd.setVisible(false);
+    // 마커 클릭하면
+    if (oTarget instanceof nhn.api.map.Marker) {
+       window.open('http://map.naver.com/?dlevel=12&pinType=site&pinId=36384360&x=126.9202281&y=37.5573280&enc=b64')
+	}
+});    
+
 var tMarker = new nhn.api.map.Marker(oIcon, { title : 'ex2i corp', point:oSeoulCityPoint }); 
 oMap.addOverlay(tMarker); 
 </script>
