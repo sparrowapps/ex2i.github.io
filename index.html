@@ -70,10 +70,10 @@
 			<span><img src="images/work2.jpg" alt="" /></span>
 			<span><img src="images/work3.jpg" alt="" /></span>
 		</div>
-		<div class="work_2col">
+		<!-- <div class="work_2col">
 			<a href="" class="btn"><img src="images/btn1.jpg" alt="" /></a>
 			<span class="right"><img src="images/img2_2.jpg" alt="" /></span>
-		</div>
+		</div> -->
 	</div>
 	<div class="work_btm">
 		<div>
@@ -271,12 +271,22 @@ oLabel.setVisible(true, oMarker); // - 특정 마커를 지정하여 해당 마�
 
 oMap.attach('mouseleave', function(oCustomEvent) { 
 
-var oTarget = oCustomEvent.target; 
-// 마커위에서 마우스 나간거면 
-if (oTarget instanceof nhn.api.map.Marker) { 
-oLabel.setVisible(false); 
-} 
+	var oTarget = oCustomEvent.target; 
+	// 마커위에서 마우스 나간거면 
+	if (oTarget instanceof nhn.api.map.Marker) { 
+	oLabel.setVisible(false); 
+	} 
 });
+
+oMap.attach('click', function(oCustomEvent) {
+    var oPoint = oCustomEvent.point;
+    var oTarget = oCustomEvent.target;
+    oInfoWnd.setVisible(false);
+    // 마커 클릭하면
+    if (oTarget instanceof nhn.api.map.Marker) {
+       window.open('http://map.naver.com/?dlevel=12&pinType=site&pinId=36384360&x=126.9202281&y=37.5573280&enc=b64')
+	}
+});            
 
 var tMarker = new nhn.api.map.Marker(oIcon, { title : 'ex2i corp', point:oSeoulCityPoint }); 
 oMap.addOverlay(tMarker); 
