@@ -241,4 +241,10 @@ jQuery(document).ready(function ($) {
             break;
         }
     });
+
+    $('.logo').click(function(e) {
+        e.preventDefault();
+
+        window.location = 'index.html';
+    })
 });

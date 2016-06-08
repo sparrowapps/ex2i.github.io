@@ -116,6 +116,16 @@ url(../font/NanumGothic.ttf),
 url(../font/NanumGothic.woff)
 }
 
+.logo {
+	background-image: url(../images/ex2i_logo.png);
+	background-size: 182px 57px;
+	background-repeat: no-repeat;
+	background-position-y: 27px;
+	width: 182px;
+	height: 99px;
+	cursor: pointer;
+}
+
 .navigation {
 	position: fixed;
 	z-index: 1000;
