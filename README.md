@@ -1,3 +1,1 @@
-# EX2i HomePage
-
-Sorry, we are not ready.
+Welcom to EX2i HomePage
