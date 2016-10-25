@@ -128,7 +128,6 @@ url(../font/NanumGothic.woff)
 
 .navigation {
 	position: fixed;
-	top : 0;
 	z-index: 1000;
 	width: 100%;
 	background: #fff;
@@ -172,7 +171,7 @@ url(../font/NanumGothic.woff)
 #box2 .about4 p{ font-size: 16px; }
 #box2 .about4 > div{ overflow: hidden; width: 1000px; margin: 0 auto; padding-top: 30px;  }
 #box2 .about4 div.a4_2{ float: left; width: 25%; }
-#box3 .work{ width: 1000px; margin: 0 auto; padding-top: 30px; padding-bottom: 90px; text-align: center; }
+#box3 .work{ width: 1000px; margin: 0 auto; padding-top: 30px; padding-bottom: 50px; text-align: center; }
 #box3 .work .work1{ padding-bottom: 40px; }
 #box3 .work .work2{ padding-bottom: 30px; font-size: 16px; }
 #box3 .work .work3{ padding-bottom: 20px; }
