@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /* CSS Document */
 
 /* reset */
@@ -177,6 +177,13 @@ url(../font/NanumGothic.woff)
 #box3 .work .work3{ padding-bottom: 20px; }
 #box3 .work .work3 span{ padding-right: 20px; }
 #box3 .work .work3 span:first-child{ padding-right: 22px; }
+#box3 .work .work4{ padding-bottom: 30px; padding-top: 30px; font-size: 16px; }
+#box3 .work .work5{ padding-bottom: 20px; }
+#box3 .work .work5 span{ padding-left: 10px;padding-right: 30px; }
+#box3 .work .work5 span:first-child{ padding-left: 20px; padding-right: 30px; }
+#box3 .work .work6 { padding-right: 88px; }
+#box3 .work .work6 .btn_down{ position: absolute; top: 35px; right: 0px; }
+
 #box3 .work_2col{ overflow: hidden; }
 #box3 .work_2col a.btn{ float: left; width: 49%; }
 #box3 .work_2col span.right{ float: right; width: 49%; }
