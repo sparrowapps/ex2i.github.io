@@ -128,6 +128,8 @@ url(../font/NanumGothic.woff)
 
 .navigation {
 	position: fixed;
+	top: 0;
+	height: 115px;
 	z-index: 1000;
 	width: 100%;
 	background: #fff;
@@ -156,8 +158,8 @@ url(../font/NanumGothic.woff)
 	font-weight: bold;
 }
 .slide{ padding-top:100px; }
-#box1{ height: 860px; }
-#box1 .visual{ position: relative; overflow: hidden; height: 860px; text-align: center; }
+#box1{ height: 900px; }
+#box1 .visual{ position: relative; overflow: hidden; height: 900px; text-align: center; }
 #box1 .visual .swiper-container .img1{ background: url(../images/bg_slide1.jpg) no-repeat 50% 0; background-size: cover; text-align: center; }
 #box1 .visual .swiper-container .img2{ background: url(../images/bg_slide2.jpg) no-repeat 50% 0; background-size: cover; }
 #box1 .visual .swiper-container .img3{ background: url(../images/bg_slide3.jpg) no-repeat 50% 0; background-size: cover; }
@@ -171,7 +173,7 @@ url(../font/NanumGothic.woff)
 #box2 .about4 p{ font-size: 16px; }
 #box2 .about4 > div{ overflow: hidden; width: 1000px; margin: 0 auto; padding-top: 30px;  }
 #box2 .about4 div.a4_2{ float: left; width: 25%; }
-#box3 .work{ width: 1000px; margin: 0 auto; padding-top: 30px; padding-bottom: 50px; text-align: center; }
+#box3 .work{ width: 1000px; margin: 0 auto; padding-top: 30px; padding-bottom: 88px; text-align: center; }
 #box3 .work .work1{ padding-bottom: 40px; }
 #box3 .work .work2{ padding-bottom: 30px; font-size: 16px; }
 #box3 .work .work3{ padding-bottom: 20px; }
@@ -185,7 +187,7 @@ url(../font/NanumGothic.woff)
 #box3 .work .work6 .btn_down{ position: absolute; top: 35px; right: 0px; }
 #box3 .work_2col{ overflow: hidden; }
 #box3 .work_2col a.btn{ float: left; width: 49%; }
-#box3 .work_2col span.right{ float: right; width: 49%; }오후 3:20 2016-10-25
+#box3 .work_2col span.right{ float: right; width: 49%; }
 #box3 .work_btm{ background: #f3f3f3; text-align: center; }
 #box3 .work_btm > div{ position: relative; width: 1000px; background: #f3f3f3; margin: 0 auto; text-align: left; padding: 40px 0; }
 #box3 .work_btm > div .btn_down{ position: absolute; top: 35px; right: 0px; }
