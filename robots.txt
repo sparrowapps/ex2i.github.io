@@ -1,2 +1,3 @@
 User-agent:*
+Allow:/ 
 Sitemap:http://www.ex2i.com/sitemap.xml
