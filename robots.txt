@@ -1,3 +1,2 @@
 User-agent:*
-Disallow:/private*/
 Sitemap:http://www.ex2i.com/sitemap.xml
