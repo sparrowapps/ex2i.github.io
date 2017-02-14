@@ -115,6 +115,15 @@ select{ height:24px; padding:3px 2px 3px 2px; font-size:12px; line-height:18px; 
 url(../font/NanumGothic.ttf),
 url(../font/NanumGothic.woff)
 }
+.logo {
+	background-image: url(../images/ex2i_logo.png);
+	background-size: 182px 57px;
+	background-repeat: no-repeat;
+	background-position-y: 27px;
+	width: 182px;
+	height: 99px;
+	cursor: pointer;
+}
 
 .navigation {
 	position: fixed;
@@ -196,8 +205,8 @@ url(../font/NanumGothic.woff)
 #box4 .with{ /*width: 1000px;*/ margin: 0 auto; padding-top: 30px; padding-bottom: 60px; text-align: center; background:#f3f3f3; }
 #box4 .with > p{ padding-top: 40px; font-size: 16px; font-weight:bold; }
 #box4 .with1{ /*width: 1000px;*/ margin: 0 auto; text-align:center; background:#f3f3f3; padding-bottom: 60px; }
-#box4 .width_slide{height: 420px; text-align: center; padding-top: 60px; }
-#box4 .width_slide > p{ padding-bottom: 40px; font-size: 16px; text-align: center; font-weight:bold; }
+#box4 .width_slide{height: 300px; text-align: center; padding-top: 60px; }
+#box4 .width_slide > p{ padding-bottom: 60px; font-size: 16px; text-align: center; font-weight:bold; }
 #box4 .width_slide .box_swiper{ position: relative; width: 1035px; margin: 0 auto; }
 #box4 .width_slide .swiper-container1{ overflow: hidden; width: 90%; margin: 0 auto; }
 #box5 .contact{ width: 100%; background: url(../images/bg_btm.jpg) no-repeat 50% 0; background-size: cover; text-align: center; }
