@@ -1,0 +1,1540 @@
+/* CSS RESET */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video { margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent;}
+body {line-height:0px;
+      position: relative;
+      width: 100%;
+      box-sizing: border-box;
+      font-size: 100%;
+      font-weight: 400;
+      height: auto;
+	  margin: 0 auto;
+      padding-right: 0px;
+      padding-bottom: 0;
+      color: #1e1e1e;
+      background-color: #fafafa;
+      font-family: "Noto Sans CJK KR", "Nanum Gothic", "Noto Sans", sans-serif;}}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {display:block;}
+ul li{list-style:none;}
+a {margin: 0; padding: 0; border: 0; vertical-align: baseline; background: transparent; text-decoration: none;}
+
+
+@charset “utf-8″;
+/* All Device */
+
+
+/*
+ #main img {
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 21%;
+    margin-top: 13%;
+    
+} */
+   
+/* clearfix */
+.clearfix:before, .clearfix:after{
+	content:"";, display: table;
+}
+.clearfix:after{
+	clear:both;
+}
+.clearfix{
+	*zoom:1;
+}
+
+/* Basic Styles */
+
+/* up버튼 */
+
+#upbtn {
+    position: fixed;
+    z-index: 999;
+    bottom: 2%;
+    right: 2%;
+}
+
+
+
+#header{
+  position:fixed;
+  z-index:999;
+  top:0;
+  width:100%;
+  background-color: #fafafa;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+nav{
+	height: 40px;
+	width: 100%;
+		font-size: 11pt;
+	position: relative;
+
+}
+nav ul{
+	padding: 0;
+	margin: 0 auto;
+	width: 1200px;
+	height: auto;
+}
+
+
+
+nav li{
+	display: inline;
+	float: left;
+    padding-top: 10px;
+}
+
+nav li a{
+		color: #1e1e1e;;
+	display: inline-block;
+	width: 100%;
+    margin-right: 50px;
+	text-align: left;
+	text-decoration: none;
+	line-height: 40px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+nav li:last-child a{
+	border-bottom: 0;
+    }
+
+nav a#pull{
+	display: none;
+}
+
+
+
+/* =========푸터================== */
+#footer .footercontent {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.footercontent .content {
+    float: left;
+    color: white;
+    padding: 10px;
+    color: #969696;
+    margin: 10px 0px;
+    font-size: 0.9em;
+}
+
+.footercontent .copyright {
+    float: right;
+    color: white;
+    padding: 10px;
+    color: #969696;
+    font-size: 0.9em;
+    margin: 10px 0px;
+}
+
+#footer {
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    background: #f0f0f0;
+    width: 100%;
+    max-height: 500px;
+    height: 100%;
+}
+
+
+
+
+/* 480 */
+
+@media only screen and (max-width:480px){
+    
+
+    #main {
+        padding-top: 70px;
+    }  
+    
+ #main img {
+    max-width: 620px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 21%;
+    margin-top: 13%;    
+    
+}
+    
+.bold800 {
+    font-weight: 700;
+}
+    
+.line_red {
+    width: 30px;
+    margin: 0px 0px 20px 0px;
+}
+
+
+/*======= header ===========*/
+
+nav {
+		border-bottom: 0;
+		height: auto;
+	}
+	nav ul {
+		display: none;
+		height: auto;
+        background-color: #fafafa;
+	}
+	nav a {
+	  	text-align: left;
+	  	width: 100%;
+	  	text-indent: 25px;
+  	}
+	nav a#pull {
+		display: block;
+		background-color: #fafafa;
+		width: 100%;
+		position: relative;
+        /*box-shadow: -5px 0px 10px 0px rgba(0, 0, 0, 0.1); */
+    
+	}
+    
+	nav a#pull:after {
+		content:"";
+		background: url('./main/nav-icon.png') no-repeat;
+		width: 30px;
+		height: 30px;
+		display: inline-block;
+		position: absolute;
+		right: 15px;
+		top: 32%;
+        
+	}
+	nav li {
+		display: block;
+		float: none;
+		width: 100%;
+        border-top: 1px solid #f0f0f0
+	}
+	nav li a {
+        margin-left: 0px;
+        margin-top: -5px;
+        padding-bottom: 4px;
+		
+	}
+    #pull img {
+        width: 70px;
+        margin-top: 10px;
+        padding-top: 5px;
+        padding-bottom: 10px;
+        margin-left: 0px;
+    }
+    
+    nav li:last-child a{
+	border-bottom: 0;
+    margin-top: -5px;
+    padding-bottom: 4px;
+        
+    }
+    
+    nav a:hover, nav a:active{
+    color: #ac2124;
+    background-color: ;
+}
+    
+.logo2 img{
+  width: 0px;
+  margin:0;
+  vertical-align: center;
+  display: block;
+  float: left;
+  
+ /* transition:  .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -webkit-transition: .25s ease-in-out; 
+*/
+}
+
+
+    
+    
+
+
+
+
+
+    
+    
+    
+    
+/*=== 메인 ===*/
+    
+    
+    
+#top{
+  z-index:0;
+  top:0;
+  width:100%;
+  min-height: 66px;
+  height: 100%;
+  background-color: #fafafa;
+
+}    
+       
+    
+    
+    
+    
+#wrapper {
+    max-width: 900px;
+    height: auto;
+    margin: 0 auto;
+    padding: 0px 9px 0px 9px;
+}
+    
+ #main img {
+    max-width: 900px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: %;
+    margin-top: 5%;
+    
+}
+
+ h2 {
+    color: #1e1e1e;
+    letter-spacing: 0em;
+    font-size: 2em;
+    font-weight: 500;
+    line-height: 1.1em;
+    padding: 70px 0px 0px 0px;
+    margin: 0px 0px 40px -5px;
+    clear: both;
+    }
+
+h3 {
+    color: #1e1e1e;
+    font-size: 1em;
+    font-weight: 600;
+    padding
+    : 0px 0px 0px 0px;
+    margin: 0px 0px 15px 0px;
+}
+
+/*=== about ===*/    
+/* 고객 */
+
+
+    
+.customer {
+    background-color: #fafafa;
+    min-height: 120px;
+    margin: 0px 10px 0px 0px;
+    padding: 6px 0px 0px 10px;
+    border-left: 2px solid #e6e6e6;
+    overflow: visible;
+}
+
+.common_h4 {
+    font-size: 1.5em;
+    font-weight: 400;
+    line-height: 1em;
+    color: #1e1e1e;
+    margin: 0px 0px 20px 0px;
+}
+
+.common_p {
+    font-size: 1em;
+    font-weight: 400;
+    color: #828282;
+    margin: 0px 0px 40px 0px;
+    line-height: 1.4em;
+
+}
+
+.about_cust li {
+    background-color: #fafafa;
+    height: 200px;
+    margin: -30px 0px 10px -10px;
+    color: #828282;
+    text-align: center;
+    float: left;
+}
+
+.customer li:last-child {
+    margin-bottom: 60px;
+        
+    }
+
+.customer li p {
+    font-size: 1em;
+    color: #1e1e1e;
+    margin: 10px;
+    
+}
+
+/* 당신을 */
+.you {
+    background-color: #fafafa;
+    min-height: 120px;
+    padding: 10px 0px 0px 10px;
+    margin: 300px 10px 130px 0px;
+    border-left: 2px solid #e6e6e6;
+    clear: both;
+}
+
+.you li{
+    background-color: #fafafa;
+    height: 200px;
+    margin: -30px 10px -5px -10px;
+    text-align: center;
+    float: left;
+}
+
+.you li:last-child {
+    margin-bottom: 60px;
+        
+    }
+
+.you li p {
+    font-size: 1em;
+    color: #1e1e1e;
+    margin: 10px;
+}
+ 
+
+/* 서비스 솔루션 */
+    
+
+    #solution {clear: both;}
+    
+.solu_list .solu_last_com img {
+     display: block;
+     min-width: 100px;
+     width: 100%;
+     height: auto;
+     line-height:0;
+     margin: 0px 10px 0px 0px;
+     padding: 0;
+    
+}
+
+
+.solu_list ul .solu_mokshop img{
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    line-height:auto;
+    margin: 0px 0px 50px 0px;
+}
+
+
+/* 회사소개서 다운 */
+
+.down {
+    display: block;
+    background-color: #fafafa;
+    max-width: 400px;
+    min-width: 100px;
+    width: 0 auto;
+    max-height: 60px;
+    height: 0 auto;
+    padding: 20px 10px 18px 10px;
+    border: 2px solid #1e1e1e;
+    margin: 0px 0px 80px 0px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    clear: both;
+}
+
+.down img {
+    max-width: 210px;
+    min-width: 50px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* 파트너 클라이언트 */
+
+.logo li img {
+    display: inline-block;
+    float: left;
+    max-width: 450px;
+    width: 100%;
+    height: auto;
+    margin: 0px 0px 8px 0px;
+}
+
+
+#partcli .logo .logo_last img{
+    display: inline-block;
+    float: left;
+    max-width: 4450px;
+    width: 100%;
+    height: auto;
+    margin: 0px 0px 80px 0px;
+    
+}
+    
+/* contact */
+
+    #contact{
+        clear: both;
+    }
+
+
+.common_contact {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 10px;
+    width: auto;
+    height: 50px;
+    border-left: 2px solid #1e1e1e;
+}
+
+.contactbold {
+    color: #1e1e1e;
+    font-size: 1em;
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+.common_contact p {
+    font-size: 1em;
+    font-weight: 400;
+    color: #828282;
+    margin-right: -15px;
+    line-height: 1.4em;
+    float: left;
+}
+
+
+
+/* 서울 */
+
+.seoul {
+    max-width: 590px;
+    width: 100%;
+    float: left;
+    margin: 0px 20px 60px -12px;
+}
+
+.seouladd {
+    max-width: 590px;
+    width: 100%;
+    min-height: 110px;
+    height: auto;
+    padding: 5px 0px 10px 10px;
+    margin: 20px 0px 20px 12px;
+    border-left: 2px solid #e6e6e6;
+    float: left;
+}
+
+.seouladd p {
+    margin: 8px 0px 0px 0px;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.3em;
+    color: #828282;
+    
+}
+
+#contact .add_en p {
+    margin: 5px 0px 0px 0px;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.3em;
+    color: #c8c8c8;
+    
+}
+
+.seoul a img{
+    max-width: 100%;
+    width: auto;
+    max-height: 434px;
+    height: auto;
+    margin: 0px 0px 0px 10px;
+    clear: both;
+}
+
+
+
+/*===== 강원사무소 =======*/
+
+
+.gw {
+    min-width: 240x;
+    width: 100%;
+    float: left;
+    margin: 0px 0px 60px 0px;
+}
+
+
+.gwadd {
+    min-width: 240x;
+    width: 100%;
+    min-height: 120px;
+    height: 100%;
+    padding: 5px 0px 10px 10px;
+    margin: 0px 0px 30px 0px;
+    border-left: 2px solid #e6e6e6;
+    float: left;
+}
+
+.gwadd p {
+    margin: 8px 0px 0px 0px;
+    font-size: 1.em;
+    font-weight: 400;
+    line-height: 1.3em;
+    color: #828282;
+
+    
+}
+
+.gw a img{
+    max-width: 100%;
+    width: auto;
+    max-height: 434px;
+    height: auto;
+    margin: 0px 0px 0px 0px;
+    clear: both;
+}
+
+
+    
+}
+
+
+
+
+
+/* 720 */
+
+@media only screen and (min-width:481px) and (max-width:1163px){
+    
+
+
+
+.bold800 {
+    font-weight: 700;
+}
+    
+.line_red {
+    margin: 0px 0px 40px 0px;
+}
+        
+
+/*======= header ===========*/
+
+nav {
+		border-bottom: 0;
+		height: auto;
+	}
+	nav ul {
+		display: none;
+		height: auto;
+	}
+	nav a {
+	  	text-align: left;
+	  	width: 100%;
+	  	text-indent: 25px;
+  	}
+	nav a#pull {
+		display : block;
+		background-color: #fafafa;
+		width: 100%;
+		position: relative;
+
+    
+	}
+    
+	nav a#pull:after {
+		content:"";
+		background: url('./main/nav-icon.png') no-repeat;
+		width: 30px;
+		height: 30px;
+		display: inline-block;
+		position: absolute;
+		right: 15px;
+		top: 32%;
+	}
+	nav li {
+		display: block;
+		float: none;
+		width: 100%;
+        border-top: 1px solid #f0f0f0
+	}
+	nav li a {
+        margin-left: 0px;
+        margin-top: -5px;
+        padding-bottom: 4px;
+
+	}
+    
+    #pull img {
+        width: 70px;
+        margin-top: 10px;
+        padding-top: 5px;
+        margin-left: 0px;
+        padding-bottom: 10px;
+    }
+    
+    nav li:last-child a{
+	border-bottom: 0;
+    margin-top: -5px;
+    padding-bottom: 5px;
+    }
+    
+    
+    nav a:hover, nav a:active{
+    color: #ac2124;
+    background-color: ;
+}
+    
+.logo2 img{
+  width: 0px;
+  margin:0;
+  vertical-align: center;
+  display: block;
+  float: left;
+  
+ /* transition:  .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -webkit-transition: .25s ease-in-out; 
+*/
+}	
+
+
+
+
+    
+    
+/*=== 메인 ===*/
+    
+#top{
+  z-index:0;
+  top:0;
+  width:100%;
+  min-height: 66px;
+  height: 100%;
+  background-color: #fafafa;
+
+}        
+    
+    
+    
+#wrapper {
+    max-width: 1163px;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    padding: 0px 10px 0px 10px;
+
+}
+    
+ #main img {
+    max-width: 900px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 21%;
+    margin-top: 0px;
+    padding-top: 12%;
+    
+}
+
+ h2 {
+    color: #1e1e1e;
+    padding-top: 70px;
+    letter-spacing: -0.06em;
+    font-size: 3em;
+    font-weight: 500;
+    line-height: 1.1em;
+    margin: 0px 0px 90px -5px;
+    clear: both;
+    }
+
+h3 {
+    color: #1e1e1e;
+    font-size: 1.4em;
+    font-weight: 600;
+    margin: 0px 0px 20px 0px;
+}
+
+/*=== about ===*/    
+/* 고객 */
+.customer {
+    background-color: #fafafa;
+    min-height: 320px;
+    margin: 0px 0px 0px 0px;
+    padding: 10px 0px 0px 26px;
+    border-left: 2px solid #e6e6e6;
+    overflow: visible;
+}
+
+.common_h4 {
+    font-size: 2.2em;
+    font-weight: 400;
+    line-height: 1em;
+    color: #1e1e1e;
+    margin: 0px 0px 25px 0px;
+}
+
+.common_p {
+    font-size: 1em;
+    font-weight: 400;
+    color: #828282;
+    margin: 0px 0px 40px 0px;
+    line-height: 1.5em;
+
+}
+
+.about_cust li {
+    background-color: #fafafa;
+    height: 200px;
+    margin: -20px 10px 0px -10px;
+    color: #828282;
+    text-align: center;
+    float: left;
+}
+
+customer li img {
+    display: inline-block;
+    width: 175px;
+}
+
+.customer li p {
+    font-size: 1em;
+    color: #1e1e1e;
+    margin: 10px;
+    
+}
+
+/* 당신을 */
+.you {
+    background-color: #fafafa;
+    min-height: 320px;
+    padding: 10px 0px 0px 26px;
+    margin: 70px 0px 110px 0px;
+    border-left: 2px solid #e6e6e6;
+    clear: both;
+}
+
+.you li{
+    background-color: #fafafa;
+    height: 200px;
+    margin: -20px 10px 30px -10px;
+    text-align: center;
+    float: left;
+}
+
+.you li p {
+    font-size: 1em;
+    color: #1e1e1e;
+    margin: 10px;
+}
+ 
+
+/* 서비스 솔루션 */
+ 
+#solution {    
+    clear: both;}   
+    
+
+    
+
+.solu_list .solu_last_com img {
+     display: block;
+     float: left;
+     max-width: 600px;
+     width: 50%;
+     height: auto;
+     line-height:0;
+     margin: 0px 0px 0px 0px;
+     padding: 0;
+    
+}
+
+
+.solu_list ul .solu_mokshop img{
+    max-width: 600px;
+    width: 50%;
+    height: auto;
+    line-height:auto;
+    margin: 0px 0px 60px 0px;
+}
+
+
+/* 회사소개서 다운 */
+
+.down {
+    display: block;
+    background-color: #fafafa;
+    max-width: 430px;
+    min-width: 200px;
+    width: 0 auto;
+    min-height: 50px;
+    height: 0 auto;
+    padding: 20px 10px 18px 10px;
+    border: 3px solid #1e1e1e;
+    margin: 0px 0px 100px 0px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    clear: both;
+}
+
+.down img {
+    max-width: 298px;
+    min-width: 100px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* 파트너 클라이언트 */
+
+.logo li img {
+    display: inline-block;
+    float: left;
+    max-width: 510px;
+    min-width: 50px;
+    width: 48%;
+    height: auto;
+    margin: 0px 9px 9px 0px;
+}
+
+
+#partcli .logo .logo_last img{
+    display: inline-block;
+    float: left;
+    max-width: 500px;
+    width: 48%;
+    height: auto;
+    margin: 0px 0px 140px 0px;
+    
+}
+    
+/* contact */
+
+ #contact {
+     clear: both;
+     
+        
+    }    
+    
+
+
+
+.common_contact {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 30px;
+    width: auto;
+    height: 62px;
+    border-left: 2px solid #1e1e1e;
+}
+
+.contactbold {
+    color: #1e1e1e;
+    font-size: 1em;
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+.common_contact p {
+    font-size: 1.25em;
+    font-weight: 400;
+    color: #828282;
+    margin-right: -15px;
+    line-height: 1.4em;
+    float: left;
+}
+
+
+
+/* 서울 */
+
+.seoul {
+    max-width: 590px;
+    width: 100%;
+    float: left;
+    margin: 0px 20px 60px 0px;
+}
+
+.seouladd {
+    max-width: 590px;
+    width: 100%;
+    min-height: 145px;
+    height: auto;
+    padding: 5px 0px 10px 30px;
+    margin: 20px 0px 30px 0px;
+    border-left: 2px solid #e6e6e6;
+    float: left;
+}
+
+.seouladd p {
+    margin: 8px 0px 0px 0px;
+    font-size: 1.25em;
+    font-weight: 400;
+    line-height: 1.3em;
+    color: #828282;
+    
+}
+
+#contact .add_en p {
+    margin: 1px 0px 0px 0px;
+    font-size: 1.25em;
+    font-weight: 400;
+    line-height: 1.3em;
+    color: #c8c8c8;
+    
+}
+
+.seoul a img{
+    max-width: 100%;
+    width: auto;
+    max-height: 434px;
+    height: auto;
+    margin: 0px 0px 0px 0px;
+    clear: both;
+}
+
+
+
+/*===== 강원사무소 =======*/
+
+
+.gw {
+    max-width: 590px;
+    width: 100%;
+    float: left;
+    margin: 0px 0px 60px 0px;
+}
+
+
+.gwadd {
+    max-width: 560px;
+    width: 100%;
+    min-height: 120px;
+    height: 100%;
+    padding: 5px 0px 10px 30px;
+    margin: 20px 0px 30px 0px;
+    border-left: 2px solid #e6e6e6;
+    float: left;
+}
+
+.gwadd p {
+    margin: 8px 0px 0px 0px;
+    font-size: 1.25em;
+    font-weight: 400;
+    line-height: 1.3em;
+    color: #828282;
+
+    
+}
+
+.gw a img{
+    max-width: 100%;
+    width: auto;
+    max-height: 434px;
+    height: auto;
+    margin: 0px 0px 0px 0px;
+    clear: both;
+}
+
+   
+
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 1200 */
+
+@media only screen and (min-width: 1164px){
+    
+/*=== 공통 ===*/
+
+.logo2{
+  margin:0;
+  margin-right: 20%;
+  vertical-align: center;
+  display: block;
+  float: left;
+  padding: 12px;
+ /* transition:  .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -webkit-transition: .25s ease-in-out; 
+*/
+}
+
+
+    #wrapper {
+    max-width: 1200px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0px 10px 0px 10px;
+
+}
+    
+h2 {
+    color: #1e1e1e;
+    letter-spacing: -0.06em;
+    font-size: 3.75em;
+    font-weight: 500;
+    line-height: 1.1em;
+    margin: 0px 0px 90px -5px;
+    padding-top: 70px;
+    clear: both;
+    }
+
+h3 {
+    color: #1e1e1e;
+    letter-spacing: -0.03em;
+    font-size: 1.7em;
+    font-weight: 00;
+    margin: 0px 0px 25px 0px;
+}
+    
+.bold800 {
+    font-weight: 800;
+}
+    
+.line_red {
+    margin: 0px 0px 60px 0px;
+}
+
+    
+/*======= header ===========*/
+
+.nav:before, .nav:after{
+	content:"";, display: table;
+}
+.nav:after{
+	clear:both;
+}
+.nav{
+	*zoom:1;
+}
+    
+    
+#header{
+  position: fixed;
+  z-index:999;
+  top:0;
+  width:100%;
+  background-color: #fafafa;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+nav li{
+	display: inline;
+	float: left;
+    margin-right: 15px;
+    margin-bottom: -10px;
+    padding-top: 0px;
+    min-height: 60px;
+    
+}
+nav a{
+	color: #1e1e1e;
+    margin-top: 0px;
+    padding-top: 0px;
+	display: inline-block;
+	width: 80%;
+	text-align: center;
+	text-decoration: none;
+	line-height: 40px;
+	
+}
+nav li a{
+	padding-top: 10px;
+    padding-left: 5px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+nav li:last-child a{
+	border-bottom: 0;
+    }
+
+nav a#pull{
+	display: none;
+}
+
+
+nav .navmenu:hover, nav .navmenu:active{
+    color: #ac2124;
+    border-top: 5px solid #ac2124;
+}
+    
+.logo2{
+  margin-top: 0px;
+  vertical-align: left;
+  display: block;
+  float: left;
+  padding: 0px;
+ /* transition:  .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -webkit-transition: .25s ease-in-out; 
+*/
+}
+
+.logo2 img {
+    width: 70px;
+    padding: 0px 0px 0px 5px;
+    float: left;
+    margin: 14px 100px 12px 5px;
+}   
+    
+/*=== 메인 ===*/
+    
+#top{
+  z-index:0;
+  top:0;
+  width:100%;
+  min-height: 66px;
+  height: 100%;
+  background-color: #fafafa;
+
+}    
+    
+    
+    
+ #main img {
+    max-width: 1200px;
+    width: auto;
+    margin-bottom: 21%;
+    margin-top: 0px;
+    padding-top: 16%;
+    
+    
+}
+
+/*=== about ===*/    
+/* 우리는 */
+.customer {
+    background-color: #fafafa;
+    min-height: 320px;
+    margin: 0px 0px 0px 0px;
+    padding: 10px 0px 0px 26px;
+    border-left: 2px solid #e6e6e6;
+    overflow: visible;
+}
+
+.common_h4 {
+    font-size: 3em;
+    font-weight: 400;
+    letter-spacing: -0.05em;
+    line-height: 1em;
+    color: #1e1e1e;
+    margin: 0px 0px 20px 0px;
+}
+
+.common_p {
+    font-size: 1.2em;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    color: #828282;
+    margin: 0px 0px 50px 0px;
+    line-height: 1.4em;
+
+}
+
+.about_cust li {
+    background-color: #fafafa;
+    height: 200px;
+    margin: -30px 10px 0px -10px;
+    color: #828282;
+    text-align: center;
+    float: left;
+}
+
+customer li img {
+    display: inline-block;
+    width: 175px;
+}
+
+.customer li p {
+    font-size: 1em;
+    color: #1e1e1e;
+    margin: 10px;
+    
+}
+
+/* 서로를 */
+.you {
+    background-color: #fafafa;
+    height: 320px;
+    padding: 10px 0px 0px 26px;
+    margin: 70px 0px 130px 0px;
+    border-left: 2px solid #e6e6e6;
+    clear: both;
+}
+
+.you li{
+    background-color: #fafafa;
+    height: 200px;
+    margin: -30px 33px 0px -10px;
+    text-align: center;
+    float: left;
+}
+
+.you li p {
+    font-size: 1em;
+    color: #1e1e1e;
+    margin: 10px;
+}
+ 
+/* 서비스 솔루션 */
+    
+
+.solu_list .solu_last_com img {
+     display: block;
+     float: left;
+     max-width: 600px;
+     width: 50%;
+     height: auto;
+     line-height:0;
+     margin: 0px 0px 0px 0px;
+     padding: 0;
+    
+}
+
+
+.solu_list ul .solu_mokshop img{
+
+    max-width: 600px;
+    width: 50%;
+    height: auto;
+    line-height:auto;
+    margin: 0px 0px 100px 0px;
+}
+
+
+/* 회사소개서 다운 */
+
+.down {
+    display: block;
+    background-color: #fafafa;
+    max-width: 430px;
+    width: 0 auto;
+    min-height: 50px;
+    height: 0 auto;
+    padding: 20px 10px 18px 10px;
+    border: 3px solid #1e1e1e;
+    margin: 0px 0px 110px 0px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    clear: both;
+}
+
+.service .down img {
+    max-width: 298px;
+    min-width: 100px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+/* 파트너 클라이언트 */
+
+.logo li img {
+    display: inline-block;
+    float: left;
+    max-width: 390px;
+    min-width: 320px;
+    width: 32%;
+    height: auto;
+    margin: 0px 10px 8px 1px;
+}
+
+
+#partcli .logo .logo_last img{
+    display: inline-block;
+    float: left;
+    max-width: 390px;
+    min-width: 320px;
+    width: 32%;
+    height: auto;
+    margin: 0px 8px 140px 1px;
+    
+}
+
+/* contact */
+
+/* #contact h2 {
+    color: #1e1e1e;
+    font-size: 3.75em;
+    font-weight: 500;
+    line-height: 1.1em;
+    margin: 140px 0px 90px -5px;
+    clear: both;
+}
+*/
+
+ #contact {
+     clear: both;
+        
+    }
+    
+    
+.common_contact {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 20px;
+    width: auto;
+    height: 62px;
+    border-left: 2px solid #1e1e1e;
+}
+
+.contactbold {
+    color: #1e1e1e;
+    font-size: 1em;
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+.common_contact p {
+    font-size: 1.25em;
+    font-weight: 400;
+    color: #828282;
+    margin-right: -15px;
+    line-height: 1.4em;
+    float: left;
+}
+
+
+
+/* 서울 */
+
+.seoul {
+    max-width: 590px;
+    width: 100%;
+    float: left;
+    margin: 0px 20px 60px 0px;
+}
+
+.seouladd {
+    max-width: 590px;
+    width: 100%;
+    min-height: 145px;
+    height: auto;
+    padding: 5px 0px 10px 20px;
+    margin: 20px 0px 30px 0px;
+    border-left: 2px solid #e6e6e6;
+    float: left;
+}
+
+.seouladd p {
+    margin: 8px 0px 0px 0px;
+    font-size: 1.25em;
+    font-weight: 400;
+    line-height: 1.3em;
+    color: #828282;
+    
+}
+
+#contact .add_en p {
+    margin: 1px 0px 0px 0px;
+    font-size: 1.25em;
+    font-weight: 400;
+    line-height: 1.3em;
+    color: #c8c8c8;
+    
+}
+
+.seoul a img{
+    max-width: 100%;
+    width: auto;
+    max-height: 434px;
+    height: auto;
+    margin: 0px 0px 0px 0px;
+    clear: both;
+}
+
+
+
+/*===== 강원사무소 =======*/
+
+
+.gw {
+    max-width: 560px;
+    width: 100%;
+    float: left;
+    margin: 0px 0px 60px 0px;
+}
+
+
+.gwadd {
+    max-width: 590px;
+    width: 100%;
+    min-height: 145px;
+    height: 100%;
+    padding: 5px 0px 10px 20px;
+    margin: 20px 0px 27px 0px;
+    border-left: 2px solid #e6e6e6;
+    float: left;
+}
+
+.gwadd p {
+    margin: 8px 0px 0px 0px;
+    font-size: 1.25em;
+    font-weight: 400;
+    line-height: 1.3em;
+    color: #828282;
+
+    
+}
+
+.gw a img{
+    max-width: 560px;
+    max-width: 100%;
+    width: auto;
+    max-height: 434px;
+    height: auto;
+    margin: 0px 0px 0px 0px;
+    clear: both;
+}
+
+
+    
+
+
+
+
+
+
