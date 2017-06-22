@@ -30,33 +30,30 @@
           });     
        */
    
-        /* li의 메뉴들 클릭 시 사라지도록    
-   if{w<1163{$("nav li, nav li a").click(function(){$("nav ul").slideToggle();
-    event.stopPropagation(); });   */     
+        /* li의 메뉴들 클릭 시 사라지도록    */     
     
+       $("nav li, nav li a").click(function(){
+    var windowWidth = $(window).width(); 
+    if (windowWidth < 1164) { 
+      $("nav ul").slideToggle();
+      event.stopPropagation(); 
+    }
+    else {
+    }   
+  });   
+  
+             
     $(window).resize(function(){
    	var w=$(window).width();
    	if(w>600 && menu.is(':hidden'))
    	{menu.removeAttr('style');}    
    	 });
-   
-           
+             
+             
    	  });    
             
-    
-    $("nav li, nav li a").click(function(){
-		var windowWidth = $(window).width(); 
-		if (windowWidth < 1164) { we
-			$("nav ul").slideToggle();
-			event.stopPropagation(); 
-		}
-		else {
-		}		
-	});          
-            
-            
-            
-            
+                
+                     
             
     
 /* 스크롤 효과 */            
@@ -90,12 +87,14 @@
 <!--   header  -->
 <div class="wrapper_navi">
 <div id="header">
-     <div class="logo2">
+    <!-- <div class="logo2">
       <a href="ex2i_170531.html"><img src="./main/logo_ex2i.png"></a>
-    </div> 
-       <nav class="clearfix1">
-           <a id="pull" href="#"><img src="./main/logo_ex2i.png" alt="ex2i로고"></a>
+    </div> -->
+       <nav class="clearfix">
+           <a id="pull" href="index.html"><img src="./main/logo_ex2i.png" alt="ex2i로고"></a>
    	      <ul class="clearfix">
+          <div class="logo2">
+          <a href="index.html"><img src="./main/logo_ex2i.png" alt="ex2i로고"></a></div> 
    	         <li><a href="#main" class="navmenu">HOME</a></li>
    	         <li><a href="#about" class="navmenu">ABOUT</a></li>
    	         <li><a href="#solution" class="navmenu">ABILITY</a></li>
@@ -108,7 +107,7 @@
         
  <!--  up버튼  -->
     <div id="upbtn">
-        <a href="ex2i_170531.html"><img src="./main/ic_up_off.png" 
+        <a href="index.html"><img src="./main/ic_up_off.png" 
          alt="홈페이지 맨 위로 올라가는 버튼"></a></div>    
  <!-- main  -->       
     <div id="wrapper">
