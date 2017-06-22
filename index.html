@@ -2,9 +2,10 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
 		<!-- viewport 추가 device-width, 초기 스케일 100%, 유저확대축소 가능, 최소스케일 100%, 최대스케일 150%-->
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, minimum-scale=1, maximum-scale=1.5"> 
-        <link rel="stylesheet" href="ex2i_170531.css">
+        <link rel="stylesheet" href="index.css">
         <link rel="shortcut icon" href="./main/favicon_ex2i.ico" type="image/x-icon">
         <link rel="icon" href="./main/favicon_ex2i.ico" type="image/x-icon">
         <title>EX2I</title>
@@ -29,23 +30,33 @@
           });     
        */
    
-        /* li의 메뉴들 클릭 시 사라지도록    */     
+        /* li의 메뉴들 클릭 시 사라지도록    
+   if{w<1163{$("nav li, nav li a").click(function(){$("nav ul").slideToggle();
+    event.stopPropagation(); });   */     
     
-       $("nav li, nav li a").click(function(){$("nav ul").slideToggle();
-        event.stopPropagation(); });   
-  
-             
     $(window).resize(function(){
    	var w=$(window).width();
    	if(w>600 && menu.is(':hidden'))
    	{menu.removeAttr('style');}    
    	 });
-             
-             
+   
+           
    	  });    
             
-                
-                     
+    
+    $("nav li, nav li a").click(function(){
+		var windowWidth = $(window).width(); 
+		if (windowWidth < 1164) { we
+			$("nav ul").slideToggle();
+			event.stopPropagation(); 
+		}
+		else {
+		}		
+	});          
+            
+            
+            
+            
             
     
 /* 스크롤 효과 */            
@@ -79,14 +90,12 @@
 <!--   header  -->
 <div class="wrapper_navi">
 <div id="header">
-    <!-- <div class="logo2">
+     <div class="logo2">
       <a href="ex2i_170531.html"><img src="./main/logo_ex2i.png"></a>
-    </div> -->
-       <nav class="clearfix">
+    </div> 
+       <nav class="clearfix1">
            <a id="pull" href="#"><img src="./main/logo_ex2i.png" alt="ex2i로고"></a>
    	      <ul class="clearfix">
-          <div class="logo2">
-          <a href="ex2i_170531.html"><img src="./main/logo_ex2i.png" alt="ex2i로고"></a></div> 
    	         <li><a href="#main" class="navmenu">HOME</a></li>
    	         <li><a href="#about" class="navmenu">ABOUT</a></li>
    	         <li><a href="#solution" class="navmenu">ABILITY</a></li>
