@@ -603,15 +603,15 @@ footer p {
 	background:url(../img/icap/img_main.png) no-repeat center center;
 	background-size:cover;
     position: relative;
-    height: 680px;
+    height: 640px;
     width: 100%;
 
 }
 
 .main_text {
-    margin-left: calc(50% - 90px);
-    padding-top: 15%;
-    max-width: 430px;
+    margin-left: 10%;
+    padding-top: 10%;
+    max-width: 350px;
     width: 100%;
     height: auto;
 
@@ -787,7 +787,7 @@ footer p {
 .main_text {
     margin-left: calc(50% - 90px);
     padding-top: 15%;
-    max-width: 430px;
+    max-width: 230px;
     width: 100%;
     height: auto;
 
