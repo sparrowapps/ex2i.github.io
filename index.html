@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-		<!-- viewport 추가 device-width, 초기 스케일 100%, 유저확대축소 가능, 최소스케일 100%, 최대스케일 150%-->
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, minimum-scale=1, maximum-scale=1.5"> 
-	<meta name="naver-site-verification" content="adce139eeacf7c8b3956d2689c2f0bb28209bf42"/>    
-        <link rel="stylesheet" href="index.css">
-        <link rel="shortcut icon" href="./main/favicon_ex2i.ico" type="image/x-icon">
-        <link rel="icon" href="./main/favicon_ex2i.ico" type="image/x-icon">
-        <title>EX2I</title>
+	<head>
+		<meta charset="utf-8">
+		<title>Ex2I</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="naver-site-verification" content="adce139eeacf7c8b3956d2689c2f0bb28209bf42"/>
+        <link rel="stylesheet" href="./css/reset.css">
+		<link rel="stylesheet" href="./css/index.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="img/favicon_ex2i.ico" type="image/x-icon">
+        <link rel="icon" href="img/favicon_ex2i.ico" type="image/x-icon">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-   	    <script>
+ 
+ <script>
    	     $(function(){
    	      	var pull=$('#pull');
    	      	    menu=$('nav ul');
@@ -33,7 +35,7 @@
    
         /* li의 메뉴들 클릭 시 사라지도록    */     
     
-       $("nav li, nav li a").click(function(){
+     $("nav li, nav li a").click(function(){
     var windowWidth = $(window).width(); 
     if (windowWidth < 1164) { 
       $("nav ul").slideToggle();
@@ -60,7 +62,7 @@
 /* 스크롤 효과 */            
             
     $(document).ready(function(){
-	$('a[href^="#"]').on('click',function (e) {
+	$('a[href^="index.html#"]').on('click',function (e) {
 	    e.preventDefault();
 
 	    var target = this.hash;
@@ -75,32 +77,121 @@
         
 
     });       
+     
+     
         
         
-});        
+        
+});  
+     
+     
 
-   	   </script>
+
+/* 1번 
+function onScroll(event){
+    var scrollPos = $(document).scrollTop();
+    $('.target').each(function () {
+        var currLink = $(this);
+        var refElement = $(currLink.attr('id'));
+        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+            $('nav ul li a').removeClass('menu_active');
+            currLink.addClass('menu_active');
+        }
+        else{
+            currLink.removeClass('menu_active');
+        }
+    });
+};
+
+*/
+    /*  
+     $(function(){
+         
+         var hei = 0;
+         var mmain = $(window).scrollTop();
+           if( mmain = vi ){$('nav ul li a').removeClass('menu_active');}
+ });
+         
+  */       
+         
+     
+   /*      
+   if($(this).scrollTop() = 0){$('nav ul li a').removeClass('menu_active');	  
+  */   
+     
+     
+/*
+  $('nav ul li a').on('click', function(event) {
+   
+      
+     
+      
+      
+      
+      $(this).parent().find('a').removeClass('menu_active');
+    $(this).addClass('menu_active');
+});
+
+$(window).on('scroll', function() {
+    $('.target').each(function() {
+        if($(window).scrollTop() >= $(this).offset().top) {
+            var id = $(this).attr('id');
+            $('nav ul li a').removeClass('menu_active');
+            $('nav ul li a[href="index.html#'+id+'"]').addClass('menu_active');
+        }
+    });
+});   
+     
+     
+  */   
+     
+/* 스크롤 메뉴 활성화        
+
+ $(window).on('scroll', function() {
+   
+  
+    $('.target').each(function() {
+        if($(window).scrollTop() >= $(this).offset().top) {
+        var id = $(this).attr('id');
+        console.log("a태그의 id는 : " + id)
+
+    $('nav ul li a').removeClass('menu_active');
+    $('nav ul li a[href="index.html#'+id+'"]').addClass('menu_active');
+    }
+    });
+    });
+
+ 
+ */    
+      
+
+     
+     
+            
+   	   </script>  
         
-        
-    </head>
-    <body>
-        
-<!--   header  -->
+		</head>
+	<body>
+    
 <div class="wrapper_navi">
 <div id="header">
     <!-- <div class="logo2">
       <a href="ex2i_170531.html"><img src="./main/logo_ex2i.png"></a>
     </div> -->
-       <nav class="clearfix">
-           <a id="pull" href="index.html"><img src="./main/logo_ex2i.png" alt="ex2i로고"></a>
-   	      <ul class="clearfix">
-          <div class="logo2">
-          <a href="index.html"><img src="./main/logo_ex2i.png" alt="ex2i로고"></a></div> 
-   	         <li><a href="#main" class="navmenu">HOME</a></li>
-   	         <li><a href="#about" class="navmenu">ABOUT</a></li>
-   	         <li><a href="#solution" class="navmenu">ABILITY</a></li>
-   	         <li><a href="#partcli" class="navmenu">PARTNERS</a></li>
-   	         <li><a href="#contact" class="navmenu">CONTACT</a></li>
+       <nav class="clearfix container">
+           <a id="pull" href="index.html"><img src="img/logo_ex2i.png" alt="ex2i로고"></a>
+   	      
+           <h1 class="logo2">
+             <a href="index.html" class="logo2"><img src="img/logo_ex2i.png" alt="ex2i로고"></a></h1> 
+            <ul class="clearfix">
+          
+   	         <li><a href="index.html#about" class="navmenu menu_active">ABOUT</a></li>
+   	         <li><a href="index.html#ability" class="navmenu menu_active">ABILITY</a></li>
+   	           
+   	         <li><a href="index.html#partner" class="navmenu menu_active ">PARTNERS</a></li>
+   	         <li><a href="index.html#contact" class="navmenu menu_active">CONTACT</a></li>
+              <li><a href="./portfolio.html" class="navmenu menu_active othercolor">PORTFOLIO</a></li>      
+   	         <li><a href="./icap.html" class="navmenu menu_active othercolor">ICAP</a></li>              
    	      </ul> 
    	  </nav>
 </div>
@@ -108,123 +199,203 @@
         
  <!--  up버튼  -->
     <div id="upbtn">
-        <a href="#main"><img src="./main/ic_up_off.png" 
-         alt="홈페이지 맨 위로 올라가는 버튼"></a></div>    
- <!-- main  -->       
-    <div id="wrapper">
-    <div id="main"> 
-        <img src="./main/main_image.png" alt="당신을 존중합니다. 여기는 EX2I입니다.">
-    </div>
-        
-<!-- about -->        
-    <div id="about">
-        <h2>EX2I는 모두를<br><span class="bold800">Respect</span>합니다</h2>
-        <h3>ABOUT</h3>
-        <img src="./about/line_red.png" alt="라인 선" class="line_red">
-        
-<!-- 당신을 -->
-    <section class="customer">
-        <h4 class="common_h4">우리는 <span class="colorred">당신</span>을 Respect 합니다</h4>        
-        <p class="common_p">EX2I는 당신의 만족을 위해 노력합니다<br/>
-        우리는 서로 존중할 수 있는 최상의 결과물로 답을 드리겠습니다</p>
-        <ul class="about_cust">
-            <li><img src="./about/ic_expert.png" alt="전문가의 기술과 경험 아이콘"><p>전문가의 기술과 경험</p></li>
-            <li><img src="./about/ic_plus.png" alt="플러스 아이콘"></li>
-            <li><img src="./about/ic_analysis.png" alt="정밀한 요구 분석 아이콘"><p>정밀한 요구 분석</p></li>
-            <li><img src="./about/ic_arrow.png" alt="오른쪽 화살표 아이콘"></li>
-            <li><img src="./about/ic_result.png" alt="최상의 결과 아이콘"><p>최상의 결과</p></li>
-        </ul>
+        <a href="index.html#main"><img src="img/btn_up.png" 
+        alt="홈페이지 맨 위로 올라가는 버튼"></a></div>          
+
+    <section id="main" class="main menu_active target">
+        <div class="container">
+            <div class="mainimg">
+                <img src="./img/img_main.png" alt="ex2i expert to information">
+            </div>
+            </div>
+            <div class="mainimg_m">
+                <img src="./img/img_main_m.png" alt="ex2i expert to information">
+         
+            </div>
+
     </section>
+
+    <section id="about" class="about target">
+        <div class="container">
+        <div class="you">
+        <div class="title">
+            <h3>EX2I는 모두를<br/><span class="bold800">Respect</span> 합니다</h3> 
+            <h2>WE</h2>
+            <span class="sub_title">우리는 <span class="red">당신</span>을 Respect 합니다</span>  
+            <p>Ex2I는 당신의 만족을 위해 노력합니다. 우리는 서로 존중할 수 있는 최상의 결과물로 답을 드리겠습니다.</p>    
+        </div> 
+        <div class="about_img">   
+        <p><img src="./img/img_about_we_1.png" alt=""></p>  
+        </div>
+        </div>      
+        </div>
         
-<!-- 서로룰 -->        
-    <section class="you">
-        <h4 class="common_h4">우리는 <span class="colorred">서로</span>를 Respect 합니다</h4>
-        <p class="common_p">임직원의 행복과 성장은 EX2I의 성장입니다<br/>
-            서로의 행복과 성장을 추구하기 위하여, 우리는 언제나 서로를 존중합니다
-        </p>
-        <ul>
-            <li><img src="./about/ic_time.png" alt="하루 7시간 근무 아이콘"><p>하루 7시간 근무</p></li>
-            <li><img src="./about/ic_food.png" alt="점심 제공 아이콘"><p>점심 제공</p></li>
-            <li><img src="./about/ic_skill.png" alt="역량 강화 지원 아이콘"><p>역량 강화 지원</p></li>
-        </ul>
-    </section>	
-    </div>   
+        
+        <div class="process">
+        <div class="container">
+            
+            <div class="process_title"></div>   
+            <div class="process_list">
+                <ul>
+                    <li class="proc_t_line_1"><img src="img/process_title_1.png" alt="request"><span>01.  Request</span>
+                    </li>
+
+                    <li class="proc_t_line_2"><img src="img/process_title_2.png" alt="planning">
+                    <span>02. Planning</span>    
+                        <ul class="detail_list">
+                            <li>요구사항 분석</li>
+                            <li>컨설팅/제안</li>
+                            <li>프로젝트 전반 기획</li>
+                            <li>사용자 분석</li>
+                            <li>콘텐츠 기획</li>
+                            <li>UX/UI 설계</li>
+                            <li>스토리보드 제작</li>
+                            <li>운영 기획</li>
+                            <li>마케팅</li>
+                        </ul></li>
+                    <li class="proc_t_line_2"><img src="img/process_title_3.png" alt="design"><span>03. Design</span>
+                        <ul class="detail_list">
+                            <li>인사이트 도출</li>
+                            <li>트렌드 분석</li>
+                            <li>웹/모바일 웹 디자인</li>
+                            <li>UX/UI 디자인</li>
+                            <li>GUI 디자인</li>
+                            <li>인터렉션 디자인</li>
+                        </ul>
+                    </li>
+                    <li class="proc_t_line_2"><img src="img/process_title_4.png" alt="development"><span>04. Development</span>
+                        <ul class="detail_list">
+                            <li>웹/모바일 웹 개발</li>
+                            <li>웹 표준화 퍼블리싱</li>
+                            <li>웹 프로그램 개발</li>
+                            <li>Front/Back 페이지 개발</li>
+                            <li>인터렉션 개발</li>
+                            <li>솔루션 개발</li>
+                            <li>Big Data 분석 및 통계</li>
+                            <li>운영 및 유지보수</li>
+                        </ul>
+                    </li>
+                    <li class="proc_t_line_1"><img src="img/process_title_5.png" alt="launch"><span>05. Launch</span></li>
+                </ul>
+            
+            </div>
+        
+        </div>
+        </div>
         
         
-    <!-- services -->
-    <div id="solution">
-        <h2>EX2I의<br/><span class="bold800">서비스와 솔루션</span>을<br>소개합니다</h2>
-        <section class="solu">
-            <h3>ABILITY</h3>
-            <img src="./about/line_red.png" class="line_red" alt="라인 선">
-            <div class="solu_list">
-            <ul><li class="solu_last_com"><img src="./sloution/img_si_left.png" alt="SI솔루션"></li>
-                <li class="solu_last_com"><img src="./sloution/img_si_right.png" alt="기업의 요구사항 충족과 함께 업무 효율 향상에 기여. 다수의 구축 경험을 통해 최적의 시스템을 구현"></li>
-                <li class="solu_last_com"><img src="./sloution/img_lupin_left.png" alt="big data solution lupin"></li>
-                <li class="solu_last_com"><img src="./sloution/img_lupin_right.png" alt="필요한 정보만 선별 및 분석. 이를 통해 형성된 고도화 데이터는 고객에게 새로운 경영방향을 제시"></li>
-                <li class="solu_last_com"><img src="./sloution/img_reco_left.png" alt="IoT, O2O솔루션"></li>
-                <li class="solu_last_com"><img src="./sloution/img_reco_right.png" alt="비콘을 이용한 위치기반 IoT 솔루션"></li>
-                <li class="solu_last_com"><a href="http://mokshop.co.kr/" target="_blank"><img src="./sloution/img_mokshop_left.png" alt="목샵"></a></li>
-                <li class="solu_mokshop"><a href="http://mokshop.co.kr/" target="_blank"><img src="./sloution/img_mokshop_right.png" alt="한옥 시장의 활성화를 위해 만들어진 국내최초의 온라인 한옥자재 쇼핑몰"></a></li>
+        <div class="container">
+        <div class="with">
+        <div class="title">
+            <span class="sub_title">우리는 <span class="red">서로</span>를 Respect 합니다</span>  
+            <p>임직원의 행복과 성장은 EX2I의 성장입니다. 서로의 행복과 성장을 추구하기 위하여, 우리는 언제나 서로를 존중합니다.</p>    
+        </div> 
+        </div>            
+        <div class="about_img">   
+        <p><img src="./img/img_about_you_1.png" alt=""></p>  
+        </div>        
+        </div>
+    </section>    
+      
+ 
+    <section id="ability" class="ability target">        
+    <div class="container">
+        <div class="title">
+            <h3>EX2I의<br/><span class="bold800">서비스와 솔루션</span>을<br/>소개합니다</h3> 
+            <h2>ABILITY</h2> 
+        </div>
+        
+        
+        <div class="ability_list">
+             <ul>
+                <li class="solu_last_com"><img src="./img/img_homepage_1.png" alt="homepage service"></li>
+                <li class="solu_last_com"><img src="./img/img_homepage_2.png" alt="EX2I의 홈페이지 서비스는 고객의 needs를 파악하고 분석하여 전문적인 작업 과정을 통해 결과물을 구현합니다."></li>     
+                
+                <!--  
+                <li class="solu_last_com"><img src="./img/img_icap_1.png" alt="iot solution icap"></li>
+                <li class="solu_last_com"><img src="./img/img_icap_2.png" alt="지능형 상황인식 IoT플랫폼인 ICAP은 R.Box를 통해 데이터 수집, 관리, 모니터링, 데이터 분석 및 통계가 가능하며, 다양한 산업 분야에 적용이 가능합니다."></li>
+                -->
+                <li class="solu_last_com"><img src="./img/img_sds_1.png" alt="si solution system development solution"></li>
+                <li class="solu_last_com"><img src="./img/img_sds_2.png" alt="EX2I에서 제공하는 SI 솔루션은 기업의 요구사항 충족과 함께 업무 효율 향상에 기여합니다. 다수의 구축 경험을 통해 최적의 시스템을 구현할 수 있습니다."></li>
+                <li class="solu_last_com"><img src="./img/img_beacon_1.png" alt="IoT, O2O솔루션"></li>
+                <li class="solu_last_com"><img src="./img/img_beacon_2.png" alt="EX2I Beacon Platform은 beacon을 이용한 위치기반 IoT 솔루션입니다. 기업의 브랜드 및 상품홍보, 산업안전, 보육,요양원의 안전관리 등 다양한 산업과 공공이익 분야에 적용이 가능합니다."></li>
+                <li class="solu_last_com"><a href="http://mokshop.co.kr/" target="_blank"><img src="./img/img_mok_1.png" alt="목샵"></a></li>
+                <li class="solu_mokshop"><a href="http://mokshop.co.kr/" target="_blank"><img src="./img/img_mok_2.png" alt="한옥 시장의 활성화를 위해 만들어진 국내최초의 온라인 한옥자재 쇼핑몰"></a></li>
             </ul>
             </div>
-        </section>
+        </div>   
         
         
- <!-- 회사소개서 다운 -->
-       
-            <div class="down">
-            <a href="./sloution/ex2i_Intruduce_170510.pdf" download><img src="sloution/ic_download.png" alt="회사소개서 다운로드 버튼"></a>
-            </div>
+        
+        
+        
+        
+    </section>    
   
-    </div>    
-        
-<!-- partners -->
-    <div id="partcli">
-        <h2>EX2I의 또 다른<br/><span class="bold800">성장 가능성</span>입니다</h2>
-        <h3>PARTNER &#38; CLIENT</h3>
-        <img src="./about/line_red.png" class="line_red" alt="빨간색 라인">
-            <ul class="logo">
-                <li><img src="partner/img_deloitte.png" alt="deloitte"
-                    onmouseover="this.src='./partner/img_deloitte_over.png'" onmouseout="this.src='partner/img_deloitte.png'" ></li>
-                <li><img src="partner/img_sas.png" alt="sas"
-                    onmouseover="this.src='./partner/img_sas_over.png'" onmouseout="this.src='partner/img_sas.png'"></li>
-                <li><img src="partner/img_perples.png" alt="perples"
-                    onmouseover="this.src=' ./partner/img_perples_over.png'" onmouseout="this.src='partner/img_perples.png'" ></li>
-                <li><img src="partner/img_loen.png" alt="loen"
-                    onmouseover="this.src='./partner/img_loen_over.png'" onmouseout="this.src='partner/img_loen.png'" ></li>
-                <li><img src="partner/img_catholic.png" alt="카톨릭대학교 서울성모병원"
-                    onmouseover="this.src='./partner/img_catholic_over.png'" onmouseout="this.src='partner/img_catholic.png'" ></li>
-                <li><img src="partner/img_dongyang.png" alt="동양매직"
-                    onmouseover="this.src='./partner/img_dongyang_over.png'" onmouseout="this.src='partner/img_dongyang.png'" ></li>
-                <li><img src="partner/img_ibk.png" alt="기업은행"
-                    onmouseover="this.src='./partner/img_ibk_over.png'" onmouseout="this.src='partner/img_ibk.png'" ></li>
-                <li><img src="partner/img_kebhn.png" alt="KEB하나은행"
-                    onmouseover="this.src='./partner/img_kebhn_over.png'" onmouseout="this.src='partner/img_kebhn.png'"></li>
-                <li><img src="partner/img_kb.png" alt="KB국민은행"
-                    onmouseover="this.src='./partner/img_kb_over.png'" onmouseout="this.src='partner/img_kb.png'" ></li>
-                <li><img src="partner/img_nh.png" alt="NH농협은행"
-                    onmouseover="this.src='./partner/img_nh_over.png'" onmouseout="this.src='partner/img_nh.png'"></li>
-                <li class="logo_last"><img src="partner/img_cgv.png" alt="CGV"
-                    onmouseover="this.src='./partner/img_cgv_over.png'" onmouseout="this.src='partner/img_cgv.png'" ></li>
-            </ul>
+<!-- 회사소개서 다운 포트폴리오 페이지로 이동 -->    
+    <div class=button>
+        <div class="down">
+            <a href="./img/ex2i_introduce_2018.pdf" download><img src="./img/btn_black.png" alt="회사소개서 다운로드 버튼"></a>
+        </div>
+        <div class="move_portfolio">
+            <a href="./portfolio.html"><img src="./img/btn_red.png" alt="포트폴리오 페이지로 이동"></a>
+        </div> 
     </div>
+ 
         
-        
-<!-- contact -->
-<div id="contact">  
-    <h2>EX2I는<br/><span class="bold800">환영합니다</span></h2>
-    <h3>CONTACT</h3>
-    <img src="./about/line_red.png" class="line_red" alt="라인 빨간색">
+    <section id="partner" class="partner target">
+        <div class="container">
+        <div class="title">
+            <h3>EX2I는<br/>함께 <span class="bold800">나아갑니다</span></h3> 
+            <h2>PARTNER &#38; CLIENT</h2> 
+        </div>       
+            <ul class="logo clearfix">
+                <li><img src="img/img_deloitte_off.png" alt="deloitte"               onmouseover="this.src='img/img_deloitte_on.png'" onmouseout="this.src='img/img_deloitte_off.png'" ></li>
+                
+                
+                <li><img src="img/img_sas_off.png" alt="sas" onmouseover="this.src='img/img_sas_on.png'" onmouseout="this.src='img/img_sas_off.png'"></li>
+                
+                <li><img src="img/img_ub_off.png" alt="유비벨록스 모바일" onmouseover="this.src='img/img_ub_on.png'" onmouseout="this.src='img/img_ub_off.png'"></li>
+                
+                <li><img src="img/img_gm_off.png" alt="글림" onmouseover="this.src='img/img_gm_on.png'" onmouseout="this.src='img/img_gm_off.png'"></li>
+                    
+                <li><img src="img/img_perples_off.png" alt="perples"                     onmouseover="this.src=' img/img_perples_on.png'" onmouseout="this.src='img/img_perples_off.png'" ></li>
+                
+                <li><img src="img/img_loen_off.png" alt="loen"                     onmouseover="this.src='img/img_loen_on.png'" onmouseout="this.src='img/img_loen_off.png'" ></li>
+                
+                <li><img src="img/img_ca_off.png" alt="카톨릭대학교 서울성모병원"           onmouseover="this.src='img/img_ca_on.png'" onmouseout="this.src='img/img_ca_off.png'" ></li>
+                
+                <li><img src="img/img_dongyang_off.png" alt="동양매직"                     onmouseover="this.src='img/img_dongyang_on.png'" onmouseout="this.src='img/img_dongyang_off.png'" ></li>
+                
+                <li><img src="img/img_ibk_off.png" alt="기업은행"                     onmouseover="this.src='img/img_ibk_on.png'" onmouseout="this.src='img/img_ibk_off.png'" ></li>
+                
+                <li><img src="img/img_kb_off.png" alt="KB국민은행"                     onmouseover="this.src='img/img_kb_on.png'" onmouseout="this.src='img/img_kb_off.png'" ></li>
+                
+                <li><img src="img/img_nh_off.png" alt="NH농협은행"                     onmouseover="this.src='img/img_nh_on.png'" onmouseout="this.src='img/img_nh_off.png'"></li>
+                
+                <li class="logo_last"><img src="img/img_cgv_off.png" alt="CGV"   onmouseover="this.src='img/img_cgv_on.png'" onmouseout="this.src='img/img_cgv_off.png'" ></li>
+            </ul>        
+       </div> 
+    </section>    
     
-<!-- 연락처 공통 -->
-            <div class="common_contact">
-                <p><span class="contactbold">Tel.</span> 02)6925-6250
-                <br/><span class="contactbold">E-mail.</span> contact@ex2i.com</p>
-                <p><span class="contactbold">Fax.</span> 02)6442-6253</p>
-            </div>
+        
+    <section id="contact" class="contact target">
+        <div class="container">
+        <div class="title">
+            <h3>EX2I는<br/><span class="bold800">환영합니다</span></h3> 
+            <h2>CONTACT</h2> 
+        </div>              
+        
+        
+        <div class="common_contact">
+            <p><span class="contactbold">Tel.</span> 02)6925-6250
+            <br/><span class="contactbold">E-mail.</span> contact@ex2i.com</p>
+            <p><span class="contactbold">Fax.</span> 02)6442-6253</p>
+        </div>
+            
 <!-- 서울사무소 -->
-        <div class="seoul">
+           
+            <div class="seoul">
             <div class="seouladd">
                 <p><span class="contactbold">서울 사무소</span></p>
                 <p>서울특별시 마포구 동교로 23길 28, 보성빌딩 5층</p>
@@ -232,27 +403,34 @@
                 <p class="add_en">5 floor, 28, Donggyo-ro 23-gil, Mapo-gu, Seoul,<br/> Republic of Korea  </p>
                 </div>
             </div>
-            <a href="http://naver.me/5Y8emDO5" target="_blank"><img src="contact/map_hongdae.png" alt="엑스투아이 서울 사무소 지도"></a>
-        </div>
+            <a href="http://naver.me/5Y8emDO5" target="_blank"><img src="img/img_map_seoul.png" alt="엑스투아이 서울 사무소 지도"></a>
+            </div>
+
 <!-- 강원사무소 -->        
-        <div class="gw">
+            <div class="gw">
             <div class="gwadd">
                 <p><span class="contactbold">강원 사무소</span></p>
                 <p>강원도 원주시 흥업면 남원로 150 산학지원관 308, 312호</p>
                 <div class="add_en">
-                <p>312,308 W4 Gnagneung-Wonju Univ., 150 Namwon-ro Heungup-myun, Wonju, Gangwon-do, Korea</p>
+                <p>312,308 W4 Gangneung-Wonju Univ., 150 Namwon-ro Heungup-myun, Wonju, Gangwon-do, Korea</p>
                 </div>
             </div>
-            <a href="http://naver.me/5XLbAwZZ" target="_blank"><img src="./contact/map_halla.png" alt="엑스투아이 강원 사무소 지도"></a>
-        </div>
-</div>
-    </div>
-    <div id="footer">
+            <a href="http://naver.me/5XLbAwZZ" target="_blank"><img src="img/img_map_won.png" alt="엑스투아이 강원 사무소 지도"></a>
+        </div>        
+        </div>       
+    </section>    
+ 
+<footer>
     <div class="footercontent">
        <p class="content">서울특별시 마포구 동교로 23길 28, 보성빌딩 5층</p>
        <p class="content">Tel. 02) 6925 – 6250</p>
        <p class="copyright">사업자 등록번호 105-88-12721</p>
     </div>
-</div>
+</footer>  
+        
+        
+    
     </body>
+    
+    
 </html>

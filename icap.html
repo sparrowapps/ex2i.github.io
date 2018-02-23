@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Ex2I ICAP Platform</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="./css/reset.css">
+		<link rel="stylesheet" href="./css/icap.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="img/icap/favicon_ex2iicap.ico" type="image/x-icon">
+        <link rel="icon" href="img/icap/favicon_ex2iicap.ico" type="image/x-icon">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+ 
+   	    <script>
+   	     $(function(){
+   	      	var pull=$('#pull');
+   	      	    menu=$('nav ul');
+   	      	    menuHeight=menu.height();   	      
+   	      $(pull).on('click', function(e){
+   	      	e.preventDefault();
+   	      	menu.slideToggle();  
+               $('').hide();
+               $('clearfix').remove();
+              
+   	      }); 
+             
+           
+        /*/ hide menu when clicking on the menu items or the logo
+          $('#pull, nav li a').click(function(){
+           $('nav li').stop().slideUp();
+          });     
+       */
+   
+        /* li의 메뉴들 클릭 시 사라지도록    */     
+    
+       $("nav li, nav li a").click(function(){
+    var windowWidth = $(window).width(); 
+    if (windowWidth < 1164) { 
+      $("nav ul").slideToggle();
+      event.stopPropagation(); 
+    }
+    else {
+    }   
+  });   
+  
+             
+    $(window).resize(function(){
+   	var w=$(window).width();
+   	if(w>600 && menu.is(':hidden'))
+   	{menu.removeAttr('style');}    
+   	 });
+             
+             
+   	  });    
+            
+                
+                     
+            
+    
+/* 스크롤 효과 */            
+            
+    $(document).ready(function(){
+	$('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash;
+	    var $target = $(target);
+
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 900, 'swing', function () {
+	        window.location.hash = target;
+	    });
+
+        
+
+    });       
+        
+        
+});  
+            
+            
+            
+/* 이거슨 탭메뉴 */
+            
+       $(function() {
+			$('ul.tab li').click(function() {
+				var activeTab = $(this).attr('data-tab');
+				$('ul.tab li').removeClass('current');
+				$('.tabcontent').removeClass('current');
+				$(this).addClass('current');
+				$('#' + activeTab).addClass('current');
+			})
+		});    
+            
+            
+
+   	   </script>  
+        
+		</head>
+	<body>
+    
+<div class="wrapper_navi">
+<div id="header">
+    <!-- <div class="logo2">
+      <a href="ex2i_170531.html"><img src="./main/logo_ex2i.png"></a>
+    </div> -->
+       <nav class="clearfix container">
+           <a id="pull" href="index.html"><img src="img/logo_ex2i.png" alt="ex2i로고"></a>
+   	      
+           <h1 class="logo2">
+             <a href="index.html" class="logo2"><img src="img/logo_ex2i.png" alt="ex2i로고"></a></h1> 
+            <ul class="clearfix">
+             <li><a href="index.html#about" class="navmenu">ABOUT</a></li>
+   	         <li><a href="index.html#ability" class="navmenu">ABILITY</a></li>
+             <li><a href="index.html#partner" class="navmenu">PARTNERS</a></li>
+   	         <li><a href="index.html#contact" class="navmenu">CONTACT</a></li>
+   	         <li><a href="./portfolio.html" class="navmenu">PORTFOLIO</a></li>    
+   	         <li><a href="index.html#contact" class="navmenu menu_active">ICAP</a></li>
+   	      </ul> 
+   	  </nav>
+</div>
+</div>
+        
+ <!--  up버튼  -->
+
+        
+
+    <section class="main">
+        <div class="mainimg">
+        <div class="container">
+            <div class="main_text">
+            <img src="./img/icap/r.box.png" class="rbox" alt="R.box">
+            <div class="title">   
+            <span>지능형 상황인식 플랫폼</span>
+            <h3>ICAP</h3>
+            <p>R.Box를 통해 데이터 수집, 관리, 모니터링, 데이터 분석 및 통계가 가능하며,<br/>   다양한 산업 분야에 적용이 가능합니다.</p>    
+            </div>
+            </div>    
+            </div>
+        </div>
+    </section>
+    
+    <div class="container">  
+    <section class="function">
+        <h2>ICAP 기능</h2>
+        <ul>
+            <li><img src="./img/icap/ic_temperature.png" alt="온도"><span>온도</span></li>
+            <li><img src="./img/icap/ic_humidty.png" alt="습도"><span>습도</span></li>
+            <li><img src="./img/icap/ic_light.png" alt="조도"><span>조도</span></li>
+            <li><img src="./img/icap/ic_gas.png" alt="유해가스"><span>유해가스</span></li>
+            <li><img src="./img/icap/ic_dust.png" alt="미세먼지"><span>미세먼지</span></li>
+            <li><img src="./img/icap/ic_motion.png" alt="모션감지"><span>모션감지</span></li>
+            <li><img src="./img/icap/ic_vibrate.png" alt="진동감지"><span>진동감지</span></li>
+            <li><img src="./img/icap/ic_ahpa.png" alt="진동감지"><span></span></li>
+        </ul>
+    </section>
+    </div>  
+
+        <section class="icap_rbox">
+        <div class="tab_menu">  
+        <h2>상황별 ICAP R.Box 사용</h2>
+        <div class="container">    
+        <div class="btn_place">
+            <ul class="tab">
+                <li class="current" data-tab="tab1"><a href="#show_place">스마트팩토리</a></li>
+                <li data-tab="tab2"><a href="#show_place">스마트홈</a></li>
+                <li data-tab="tab3"><a href="#show_place">병원</a></li>
+                <li data-tab="tab4"><a href="#show_place">어린이집</a></li>
+                <li data-tab="tab5"><a href="#show_place">수목원</a></li>                
+            </ul>
+        </div>
+        </div> 
+        </div>
+        <div class="container"> 
+        <div id="show_place" class="show_place">  
+		<div id="tab1" class="tabcontent current">
+			<p><img src="./img/icap/factory.png" alt="스마트팩토리 시나리오"></p>
+
+		</div> 
+		<div id="tab2" class="tabcontent">
+			<p><img src="./img/icap/home.png" alt="어린이집 시나리오"></p>
+		</div>
+		<div id="tab3" class="tabcontent">
+			<p><img src="./img/icap/hospital.png" alt="스마트홈 시나리오"></p>
+		</div>
+		<div id="tab4" class="tabcontent">
+			<p><img src="./img/icap/child.png" alt="어린이집 시나리오"></p>
+		</div>
+		<div id="tab5" class="tabcontent">
+			<p><img src="./img/icap/tree.png" alt="수목원 시나리오"></p>
+		</div>
+        </div>                                 </div>           
+    </section>  
+        
+ 
+        
+<section class="contact_mail">
+    <div class="container">
+    <div class="mail">
+    <span class="title_contact">문의하기</span>
+    <span>contact@ex2i.com</span>
+    </div>        
+    </div>   
+        
+</section>       
+        
+        
+        
+        
+        
+<footer>
+    <div class="footercontent">
+       <p class="content">서울특별시 마포구 동교로 23길 28, 보성빌딩 5층</p>
+       <p class="content">Tel. 02) 6925 – 6250</p>
+       <p class="copyright">사업자 등록번호 105-88-12721</p>
+    </div>
+</footer>  
+        
+        
+    
+    </body>
+    
+    
+</html>

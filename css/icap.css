@@ -1,0 +1,849 @@
+/* ----TYPOGRAHY ---------- */
+/* https://fonts.google.com/  adobe는 typekit  */
+/* font-family: 'Montserrat', sans-serif; */
+body {
+    font-family: "Noto Sans CJK KR", "Nanum Gothic", "Noto Sans", sans-serif;
+	font-size: 1rem;
+	color: #1e1e1e;
+    position: relative;
+    height: auto; 
+    box-sizing: border-box;
+    
+}
+
+
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Noto Sans', sans-serif; */
+
+
+
+
+/* ----- LAYOUT --------- */
+/* 본 사이트의 근본 틀을 잡아줌 */
+/* 요소 검사를 했을때 높이가 안잡히면 안된다. */
+
+.container {
+    max-width:1200px;
+    width:100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0px 20px;
+
+    
+    
+}
+
+
+
+/* TEXT */
+/* 폰트사이즈를 먼저 잡고 폰트가 차지하는 전체 크기를 보고 패딩 값을 빼줘야한다 */
+
+
+
+
+
+
+
+
+/* ----NAV / HEADER ---------- */
+/* NAV */
+
+
+/* HEADER */
+/* clearfix */
+    .clearfix:before, .clearfix:after{
+        content:""; display: table;
+    }
+    .clearfix:after{
+        clear:both;
+    }
+    .clearfix{
+        *zoom:1;
+    }
+
+    /* Basic Styles */
+
+    /* up버튼 */
+
+    #upbtn {
+        position: fixed;
+        z-index: 999;
+        bottom: 2%;
+        right: 2%;
+    }
+
+
+
+    #header{
+      position:fixed;
+      z-index:999;
+      top:0;
+      width:100%;
+      background-color: #ffffff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+
+    nav{
+        height: 40px;
+        width: 100%;
+        font-size: 11pt;
+        position: relative;
+
+    }
+    nav ul{
+        padding: 0;
+        margin: 0 auto;
+        width: 1200px;
+        height: auto;
+    }
+
+
+
+    nav li{
+        display: inline;
+        float: left;
+        width:120px;
+    }
+
+    nav li a{
+        color: #1e1e1e;
+        display: inline-block;
+        width: 100%;      
+        padding-top: 10px;
+        margin-right: 50px;
+        text-align: center;
+        text-decoration: none;
+        line-height: 40px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+    }
+    nav li:last-child a{
+        border-bottom: 0;
+        }
+
+    nav a#pull{
+        display: none;
+    }
+
+
+    nav .navmenu:hover{
+        color: #00c1ff;
+        font-weight:600;
+       border-top: 5px solid #00c1ff;
+    }
+
+
+.menu_active {
+    color: #00c1ff;
+    font-weight:600;
+}
+
+
+
+
+/* ----MAIN CONTENT ---------- */
+
+.mainimg {
+    margin-top: 60px;
+	background:url(../img/icap/img_main.png) no-repeat center center;
+	background-size:cover;
+    position: relative;
+    height: 780px;
+    width: 100%;
+
+}
+
+.main_text {
+    margin-left: calc(60% - 50px);
+    padding-top: 18%;
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+
+
+
+
+}
+
+.title {
+    margin-top: 23px;
+}
+
+.title span{
+    color:#ffffff;
+    font-size: 2.25rem;
+
+}
+
+.title h3 {
+    color:#ffffff;
+    font-size: 4.375rem;
+    font-weight: 600;
+}
+
+.title p {
+    max-width:380px;
+    letter-spacing: -0.1rem;
+    font-family: 'Noto Sans', sans-serif;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    font-size: 1.375rem;
+    font-weight: 500;
+    line-height: 29px;
+    color:#ffffff;
+}
+
+/* function ICAP 기능 */
+
+.function {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+
+.function h2 {
+    color:#323232;
+    color:#323232;
+    font-size: 2.25rem;
+    font-weight: 600;
+    letter-spacing: -0.1rem;
+
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.function ul {
+    overflow: hidden;
+    height: auto;
+    display: inline-block;
+}
+
+.function li {
+    float: left;
+    height:130px;
+    margin: 0px 15px 0px 15px;
+    
+    
+}
+
+.function li span {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+  
+/* place 상황별 icap r.box */
+
+.tab_menu {
+	background:url(../img/icap/img_bg_place.png) no-repeat center center;
+	background-size:cover;
+
+    padding: 60px 20px;;
+    position: relative;
+}
+
+
+.btn_place {
+    text-align:center;
+}
+
+
+
+.tab_menu h2 {
+    text-align: center;
+    font-size: 2rem;
+    color:#ffffff;
+    font-weight: 600;
+    letter-spacing: -0.1rem;
+    
+}
+
+
+/* tab */
+
+
+
+.tab {
+	list-style: none;
+	padding: 0;
+	overflow: hidden;
+
+    display: inline-block;
+  /*  display: flex;
+    justify-content: space-around;  */ 
+    margin-top: 30px;
+}
+
+
+		/* Float the list items side by side */
+.tab li {
+	float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+}
+		/* Style the links inside the list items */
+.tab li a {
+	display: inline-block;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	padding: 14px 16px;
+    font-size: 1.3rem;
+	transition:0.3s;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+}
+		/* Style the tab content */
+.tabcontent {
+	display: none;
+	background-color:#fff;
+
+	color:#fff;
+}
+ul.tab li.current{
+	background-color: #fff;
+	color: #222;
+}
+
+ul.tab li.current a {
+    color:#00c1ff;
+    font-size: 1.3rem;
+    font-weight: 600;
+
+}
+
+.show_place {
+    padding-top: 80px;
+}
+
+.tabcontent.current {
+	display: block;
+}	
+
+.tabcontent.current p {
+    color:#1e1e1e;
+    font-size: 1.3rem;
+    text-align: center;
+    
+
+}
+
+.tabcontent.current p {
+    text-align: center;
+
+}
+
+.tabcontent.current img {
+    width:600px;
+    max-width: 100%;
+}
+
+
+
+/* contact */
+
+.contact_mail {
+    background-image: url('../img/icap/img_bg_bottom.png');
+    width:100%;
+    padding: 40px 0px;
+}
+
+.mail {
+    text-align: center;
+
+}
+
+.title_contact {
+    margin-right: 15px;
+}
+
+.mail span {
+    color:#ffffff;
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    
+
+}
+
+
+
+
+/* ----FOOTER ---------- */
+
+
+footer .footercontent {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+
+    }
+
+.footercontent .content {
+    float: left;
+    color: white;
+    padding: 0px 10px;
+    color: #969696;
+    margin: 10px 0px;
+    font-size: 0.9em;
+    }
+
+.footercontent .copyright {
+    float: right;
+    color: white;
+    padding: 0px 10px;
+    color: #969696;
+    font-size: 0.9em;
+    margin: 10px 0px;
+    }
+
+footer {
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    background: #1e1e1e;
+    width: 100%;
+    line-height: 0px;
+    }
+
+footer p {
+    line-height: 1rem;
+}
+
+
+
+    @media only screen and (min-width: 1200px){
+
+    /*=== 공통 ===*/
+
+    .logo2{
+      margin:0;
+      margin-right: 20%;
+      vertical-align: center;
+      display: block;
+      float: left;
+      padding: 12px;
+     /* transition:  .25s ease-in-out;
+      -moz-transition: .25s ease-in-out;
+      -webkit-transition: .25s ease-in-out; 
+    */
+    }
+
+
+   
+
+    /*======= header ===========*/
+
+ 
+        
+        
+        
+.othercolor {
+    color:#ac2124;
+
+        }
+    
+
+    .logo2{
+      margin-top: 0px;
+      display: block;
+      float: left;
+      padding: 0px;
+     /* transition:  .25s ease-in-out;
+      -moz-transition: .25s ease-in-out;
+      -webkit-transition: .25s ease-in-out; 
+    */
+    }
+
+    .logo2 img {
+        width: 70px;
+        padding: 0px 0px 0px 5px;
+        float: left;
+        margin: 14px 100px 12px 5px;
+    }   
+
+    .container {
+    max-width:1200px;
+    width:100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0px 20px;
+    
+    
+}
+        }
+
+
+
+       
+    
+    /* 720 */
+
+    @media only screen and (min-width:481px) and (max-width:1199px){
+
+    /* 공통 */
+    .container {
+    max-width:1200px;
+    width:100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0px 20px;
+    
+    
+}    
+        
+    logo2{
+      margin:0;
+      margin-right: 20%;
+      vertical-align: center;
+      display: block;
+      float: left;
+      padding: 12px;
+     /* transition:  .25s ease-in-out;
+      -moz-transition: .25s ease-in-out;
+      -webkit-transition: .25s ease-in-out; 
+    */
+    }
+
+
+    /*======= header ===========*/
+
+    nav {
+            height: 80px;
+            border-bottom: 0;
+            height: auto;
+        }
+        nav ul {
+            display: none;
+            height: auto;
+        }
+        nav a {
+            text-align: left;
+            width: 100%;
+            text-indent: 25px;
+        }
+        nav a#pull {
+            display : block;
+            background-color: #ffffff;
+            width: 100%;
+            position: relative;
+
+
+        }
+
+        nav a#pull:after {
+            content:"";
+            background: url('../img/nav-icon.png') no-repeat;
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            position: absolute;
+            right: 15px;
+            top: 32%;
+        }
+        nav li {
+            display: block;
+            float: none;
+            width: 100%;
+            background: #ffffff;
+            border-top: 1px solid #f0f0f0
+        }
+        nav li a {
+            margin-left: 0px;
+            margin-top: -5px;
+            text-align: left;
+            padding-bottom: 4px;
+
+        }
+
+        #pull img {
+            width: 70px;
+            margin-top: 10px;
+            padding-top: 5px;
+            margin-left: 0px;
+            padding-bottom: 10px;
+        }
+
+        nav li:last-child a{
+        border-bottom: 0;
+        margin-top: -5px;
+        padding-bottom: 5px;
+        }
+
+
+       nav .navmenu:hover{
+        color: #00c0ff;
+        font-weight:600;
+       border-top: none;
+    }
+
+
+    .logo2 {
+      width: 0px;
+      margin:0;
+
+      vertical-align: center;
+      display: none;
+      float: left;
+
+     /* transition:  .25s ease-in-out;
+      -moz-transition: .25s ease-in-out;
+      -webkit-transition: .25s ease-in-out; 
+    */
+        }
+
+
+
+.mainimg {
+    margin-top: 65px;
+	background:url(../img/icap/img_main.png) no-repeat center center;
+	background-size:cover;
+    position: relative;
+    height: 680px;
+    width: 100%;
+
+}
+
+.main_text {
+    margin-left: calc(50% - 90px);
+    padding-top: 15%;
+    max-width: 430px;
+    width: 100%;
+    height: auto;
+
+}
+
+.title {
+    margin-top: 23px;
+}
+
+.title span{
+    color:#ffffff;
+    font-size: 2.25rem;
+
+}
+
+.title h3 {
+    color:#ffffff;
+    font-size: 4.375rem;
+    font-weight: 600;
+}
+
+.title p {
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: -0.1rem;
+    font-family: 'Noto Sans', sans-serif;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    font-size: 1.375rem;
+    font-weight: 500;
+    line-height: 28px;
+    color:#ffffff;
+}
+
+
+/* function ICAP 기능 */
+        
+.function ul {
+    overflow: hidden;
+    height: auto;
+    display: inline-block;
+}
+
+.function li {
+    float: left;
+    height:130px;
+    width:13%;
+    margin: 0px 6%;
+    
+    
+}
+
+
+
+   .menu_active{
+        color: #00c0ff;
+        font-weight: 600;
+        border-top: none;
+    }        
+        
+
+
+
+
+
+
+
+
+
+}
+
+
+
+/* headther 반응형 */
+
+   @media only screen and (max-width:480px){
+
+
+    /*======= header ===========*/
+
+    nav {
+            border-bottom: 0;
+            height: auto;
+        }
+        nav ul {
+            display: none;
+            height: auto;
+            background-color: #ffffff;
+        }
+        nav a {
+            text-align: left;
+            width: 100%;
+            text-indent: 25px;
+        }
+        nav a#pull {
+            display: block;
+            background-color: #ffffff;
+            width: 100%;
+            position: relative;
+            /*box-shadow: -5px 0px 10px 0px rgba(0, 0, 0, 0.1); */
+
+        }
+
+        nav a#pull:after {
+            content:"";
+            background: url('../img/nav-icon.png') no-repeat;
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            position: absolute;
+            right: 15px;
+            top: 32%;
+
+        }
+        nav li {
+            display: block;
+            float: none;
+            width: 100%;
+            border-top: 1px solid #f0f0f0;
+        }
+        nav li a {
+            margin-left: 0px;
+            margin-top: -5px;
+            padding-bottom: 4px;
+            text-align: left;
+
+        }
+        #pull img {
+            width: 70px;
+            margin-top: 10px;
+            padding-top: 5px;
+            padding-bottom: 10px;
+            margin-left: 0px;
+        }
+
+        nav li:last-child a{
+        border-bottom: 0;
+        margin-top: -5px;
+        padding-bottom: 4px;
+
+        }
+
+       nav .navmenu:hover{
+        color: #00c0ff;
+        font-weight:600;
+       border-top: none;
+    }
+
+    .logo2 img{
+      width: 0px;
+      margin:0;
+      vertical-align: center;
+      display: block;
+      float: left;
+
+     /* transition:  .25s ease-in-out;
+      -moz-transition: .25s ease-in-out;
+      -webkit-transition: .25s ease-in-out; 
+    */
+       }
+
+
+.mainimg {
+    margin-top: 65px;
+	background:url(../img/icap/img_main.png) no-repeat center center;
+	background-size:cover;
+    position: relative;
+    height: 540px;
+    width: 100%;
+
+}
+
+.main_text {
+    margin-left: calc(50% - 90px);
+    padding-top: 15%;
+    max-width: 430px;
+    width: 100%;
+    height: auto;
+
+}
+
+.title {
+    margin-top: 23px;
+}
+
+.title span{
+    color:#ffffff;
+    font-size: 1.4rem;
+
+}
+
+.title h3 {
+    color:#ffffff;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.title p {
+    letter-spacing: -0.1rem;
+    font-family: 'Noto Sans', sans-serif;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 24px;
+    color:#ffffff;
+}
+
+
+.menu_active{
+     color: #00c0ff;
+     font-weight: 600;
+    border-top: none;
+    }        
+        
+.function ul {
+    overflow: hidden;
+    height: auto;
+    display: inline-block;
+}
+
+.function li {
+    float: left;
+    width:23%;
+    height:130px;
+    margin: 0px 5%;
+    
+    
+}
+       
+
+       
+
+
+}

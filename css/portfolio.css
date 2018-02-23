@@ -1,0 +1,860 @@
+/* CSS RESET */
+body {
+    font-family: "Noto Sans CJK KR", "Nanum Gothic", "Noto Sans", sans-serif;
+	font-size: 1rem;
+	color: #ffffff;
+    background-color: #1e1e1e;
+    position: relative;
+    height: auto;
+    box-sizing: border-box;
+    
+}
+
+
+/* All Device */
+
+
+/*
+ #main img {
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 21%;
+    margin-top: 13%;
+    
+} */
+
+
+/* --- LAYOUT --- */
+.container {
+    max-width:1200px;
+    width:100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0px 20px;
+    
+    
+}
+
+
+
+   
+/* clearfix */
+    /* clearfix */
+    .clearfix:before, .clearfix:after{
+        content:""; display: table;
+    }
+    .clearfix:after{
+        clear:both;
+    }
+    .clearfix{
+        *zoom:1;
+    }
+
+    /* Basic Styles */
+
+    /* up버튼 */
+
+    #upbtn {
+        position: fixed;
+        z-index: 999;
+        bottom: 2%;
+        right: 2%;
+    }
+
+
+
+    #header{
+      position:fixed;
+      z-index:999;
+      top:0;
+      width:100%;
+      background-color: #ffffff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+
+    nav{
+        height: 40px;
+        width: 100%;
+        font-size: 11pt;
+        position: relative;
+
+    }
+    nav ul{
+        padding: 0;
+        margin: 0 auto;
+        width: 1200px;
+        height: auto;
+    }
+
+
+    nav li{
+        display: inline;
+        float: left;
+        width:120px;
+    }
+
+
+    nav li a{
+        color: #1e1e1e;
+        display: inline-block;
+        width: 100%;
+        padding-top: 10px;
+        margin-right: 50px;
+        text-align: center;
+        text-decoration: none;
+        line-height: 40px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+    }
+
+
+    nav li:last-child a{
+        border-bottom: 0;
+        }
+
+    nav a#pull{
+        display: none;
+    }
+
+
+
+/* ----MAIN CONTENT ---------- */
+    /*=== 공통 ===*/
+
+
+
+
+
+ 
+
+
+
+    /*=== 메인 ===*/
+
+   .line_red {
+        margin: 0px 0px 60px 20px;
+    }
+        
+        
+ h2 {
+        color: #ffffff;
+        letter-spacing: -0.06em;
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 1.1em;
+        margin: 70px 0px 14px -5px;
+        padding: 80px 0px 0px 20px;
+        
+        }
+
+
+/* -------- PORTFOLIO -------------- */
+
+
+
+/* 포트폴리오 이미지들 url */
+.port-nepa { background: url('../img/work/img_1_nepa.png') -20px -88px no-repeat;
+    -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+}
+.port-kt { background: url('../img/work/img_2_kt.png') -20px -88px no-repeat; 
+    -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;}
+
+.port-onestore { background: url('../img/work/img_3_onstore.png') -20px -88px  no-repeat;
+    -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;}
+
+.port-olleh { background: url('../img/work/img_4_olleh.png') -10px 0px no-repeat;
+        -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+}
+.port-opinet { background: url('../img/work/img_5_opinet.png') -0px -0px no-repeat;
+    -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;}
+
+.port-dmz { background: url('../img/work/img_6_dmz.png') -0px -0px no-repeat;
+    -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;}
+
+.port-shinhwa { background: url('../img/work/img_7_shinhwa.png') -0px -0px no-repeat;  
+    -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;}
+
+.port-ibk { background: url('../img/work/img_8_ibk.png') -0px -0px no-repeat;
+    -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+}
+
+.port-develpor { background: url('../img/work/img_9_developer.png') -0px -0px no-repeat;
+    -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+}
+
+.port-hec { background: url('../img/work/img_10_hec.png') -0px -0px no-repeat;
+    -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+}
+
+.port-eco { background: url('../img/work/img_11_eco.png') -0px -0px no-repeat;
+    -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+}
+
+.port-enpol { background: url('../img/work/img_12_enpol.png') -0px -0px no-repeat;
+    -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+}
+
+.port-design { background: url('../img/work/img_13_design.png') -0px -0px no-repeat;
+    -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+}
+
+.port-oplinet2 { background: url('../img/work/img_14_opinet_2.png') -0px -0px no-repeat;
+    -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+}
+
+.port-lgu { background: url('../img/work/img_15_lgu.png') -50px -0px no-repeat;
+    -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+}
+
+.port-carlive { background: url('../img/work/img_16_carlive.png') -50px -0px no-repeat;
+    -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+}
+
+.port-food { background: url('../img/work/img_17_food.png') -50px -0px no-repeat;
+    -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+}
+
+.port-mont { background: url('../img/work/img_18_mont.png') -50px -0px no-repeat;
+    -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+}
+
+.port-lc { background: url('../img/work/img_19_lc.png') -50px -0px no-repeat;
+    -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+}
+
+
+
+
+.portfolio-list {
+	list-style: none;
+    width:100%;
+
+}
+
+.portfolio-list li {
+	background-color: #555;
+    float: left;
+    width: 23%;
+	height: 300px;
+    margin: 0px 10px 40px 10px;
+	position: relative;
+    box-sizing: border-box;
+    border: 3px solid #ffffff;
+}
+
+
+.portfolio-list li:last-child {
+    margin-bottom: 0px;
+}
+
+
+
+
+.portfolio-list li .caption {
+	position: absolute;
+	box-sizing: border-box;
+	bottom: 0;
+	width: 100%;
+	height: 95px;
+	background-color: #ffffff;
+	padding: 10px;
+    
+}
+
+
+.award {
+    position: absolute;
+    top:0;
+    right:3%;
+}
+
+
+.caption span {
+    font-size: 0.8rem;
+    color:#969696;
+
+}
+
+.caption h4 {
+    font-size: 1rem;
+    color:#1e1e1e;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.caption h3 {
+    font-size: 1.125rem;
+    color:#1e1e1e;
+    font-weight: 600;
+}
+
+
+
+    .button {
+        clear: both;  
+        width:350px;
+        margin: 0 auto;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        }  
+        
+
+    /* =========푸터================== */
+
+footer .footercontent {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+
+    }
+
+.footercontent .content {
+    float: left;
+    color: white;
+    padding: 0px 10px;
+    color: #4b4b4b;
+    margin: 10px 0px;
+    font-size: 0.9em;
+    }
+
+.footercontent .copyright {
+    float: right;
+    color: white;
+    padding: 0px 10px;
+    color: #4b4b4b;
+    font-size: 0.9em;
+    margin: 10px 0px;
+    }
+
+footer {
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    background: #101010;
+    width: 100%;
+    line-height: 0px;
+    }
+
+footer p {
+    line-height: 1rem;
+}
+
+
+    @media only screen and (min-width: 1200px){
+
+    /*=== 공통 ===*/
+
+ 
+    .logo2{
+      margin:0;
+      margin-right: 20%;
+      vertical-align: center;
+      display: block;
+      float: left;
+      padding: 12px;
+     /* transition:  .25s ease-in-out;
+      -moz-transition: .25s ease-in-out;
+      -webkit-transition: .25s ease-in-out; 
+    */
+    }
+
+    nav .navmenu:hover{
+        color: #1e1e1e;
+        font-weight:600;
+       border-top: 5px solid #1e1e1e;
+  
+    }
+
+        
+.othercolor {
+    color:#1e1e1e;
+    font-weight: 600;
+
+        }
+    
+    /*======= header ===========*/
+
+           
+        
+
+    
+
+    .logo2{
+      margin-top: 0px;
+    
+      display: block;
+      float: left;
+      padding: 0px;
+     /* transition:  .25s ease-in-out;
+      -moz-transition: .25s ease-in-out;
+      -webkit-transition: .25s ease-in-out; 
+    */
+    }
+
+    .logo2 img {
+        width: 70px;
+        padding: 0px 0px 0px 5px;
+        float: left;
+        margin: 14px 100px 12px 5px;
+    }   
+
+    .container {
+    max-width:1200px;
+    width:100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0px 20px;
+    
+    
+}
+        }
+      
+ 
+       
+    
+    /* 720 */
+
+    @media only screen and (min-width:760px) and (max-width:1199px){
+
+    /* 공통 */
+        
+        
+    logo2{
+      margin:0;
+      margin-right: 20%;
+      vertical-align: center;
+      display: block;
+      float: left;
+      padding: 12px;
+     /* transition:  .25s ease-in-out;
+      -moz-transition: .25s ease-in-out;
+      -webkit-transition: .25s ease-in-out; 
+    */
+    }
+
+
+ 
+
+
+
+
+
+
+    /*======= header ===========*/
+
+    nav {
+            height: 80px;
+            border-bottom: 0;
+            height: auto;
+        }
+        nav ul {
+            display: none;
+            height: auto;
+        }
+        nav a {
+            text-align: left;
+            width: 100%;
+            text-indent: 25px;
+        }
+        nav a#pull {
+            display : block;
+            background-color: #ffffff;
+            width: 100%;
+            position: relative;
+
+
+        }
+
+        nav a#pull:after {
+            content:"";
+            background: url('../img/work/nav-icon.png') no-repeat;
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            position: absolute;
+            right: 15px;
+            top: 32%;
+        }
+        nav li {
+            display: block;
+            float: none;
+            width: 100%;
+            background: #ffffff;
+            border-top: 1px solid #f0f0f0;
+        }
+        nav li a {
+            margin-left: 0px;
+            margin-top: -5px;
+            padding-bottom: 4px;
+            text-align: left;
+
+        }
+
+        #pull img {
+            width: 70px;
+            margin-top: 10px;
+            padding-top: 5px;
+            margin-left: 0px;
+            padding-bottom: 10px;
+        }
+
+        nav li:last-child a{
+        border-bottom: 0;
+        margin-top: -5px;
+        padding-bottom: 5px;
+        }
+
+
+
+       nav .navmenu:hover{
+        color: #1e1e1e;
+        font-weight:600;
+       border-top: none;
+    }
+
+   
+
+    .logo2 {
+      width: 0px;
+      margin:0;
+
+      vertical-align: center;
+      display: none;
+      float: left;
+
+     /* transition:  .25s ease-in-out;
+      -moz-transition: .25s ease-in-out;
+      -webkit-transition: .25s ease-in-out; 
+    */
+        }
+
+     
+
+        
+        
+        
+.portfolio-list {
+	list-style: none;
+    width:100%;
+
+}
+
+.portfolio-list li {
+	background-color: #555;
+    float: left;
+    width: 29.7%;
+	height: 300px;
+    margin: 0px 10px 40px 15px;
+	position: relative;
+    box-sizing: border-box;
+    border: 3px solid #ffffff;
+}
+        
+
+
+.portfolio-list li:last-child {
+    margin-bottom: 0px;
+}
+
+
+
+
+.portfolio-list li .caption {
+	position: absolute;
+	box-sizing: border-box;
+	bottom: 0;
+	width: 100%;
+	height: 90px;
+	padding: 10px 10px 0px 10px;
+    
+}
+
+.caption span {
+    font-size: 0.8rem;
+
+}
+
+.caption h4 {
+    font-size: 0.9rem;
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+
+.caption h3 {
+    font-size: 1rem;
+
+}
+
+
+
+
+}
+
+
+@media only screen and (max-width:759px){
+
+
+    /*======= header ===========*/
+
+    nav {
+            border-bottom: 0;
+            height: auto;
+        }
+        nav ul {
+            display: none;
+            height: auto;
+            background-color: #ffffff;
+        }
+        nav a {
+            text-align: left;
+            width: 100%;
+            text-indent: 25px;
+        }
+        nav a#pull {
+            display: block;
+            background-color: #ffffff;
+            width: 100%;
+            position: relative;
+            /*box-shadow: -5px 0px 10px 0px rgba(0, 0, 0, 0.1); */
+
+        }
+
+        nav a#pull:after {
+            content:"";
+            background: url('../img/work/nav-icon.png') no-repeat;
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            position: absolute;
+            right: 15px;
+            top: 32%;
+
+        }
+        nav li {
+            display: block;
+            float: none;
+            width: 100%;
+            border-top: 1px solid #f0f0f0;
+        }
+        nav li a {
+            margin-left: 0px;
+            margin-top: -5px;
+            padding-bottom: 4px;
+            text-align: left;
+
+        }
+    
+        #pull img {
+            width: 70px;
+            margin-top: 10px;
+            padding-top: 5px;
+            padding-bottom: 10px;
+            margin-left: 0px;
+        }
+
+      nav li:last-child a{
+        border-bottom: 0;
+        margin-top: -5px;
+        padding-bottom: 4px;
+
+        }
+
+       nav .navmenu:hover{
+        color: #1e1e1e;
+        font-weight:600;
+       border-top: none;
+    }
+
+
+    .logo2 img{
+      width: 0px;
+      margin:0;
+      vertical-align: center;
+      display: block;
+      float: left;
+
+     /* transition:  .25s ease-in-out;
+      -moz-transition: .25s ease-in-out;
+      -webkit-transition: .25s ease-in-out; 
+    */
+       }
+    
+    
+
+    /*=== 메인 ===*/
+
+   .line_red {
+        margin: 0px 0px 60px 20px;
+    }
+        
+        
+ h2 {
+        color: #ffffff;
+        letter-spacing: -0.06em;
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 1.1em;
+        margin: 50px 0px 10px -5px;
+        padding: 80px 0px 0px 20px;
+        
+        }
+    
+
+/* 포트폴리오 이미지들 url */
+.port-nepa { background: url('../img/work/img_1-1_nepa.png') 0px 0px no-repeat;
+    -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+}
+.port-kt { background: url('../img/work/img_2-1_kt.png') 0px -0px no-repeat; 
+    -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;}
+
+.port-onestore { background: url('../img/work/img_3-1_onstore.png') 0px 0px  no-repeat;
+    -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;}        
+        
+        
+        
+        
+    
+    
+    
+
+   
+    .portfolio-list  li{
+        float: none;
+        width:100%;
+        height: 170px;
+        margin-left: 0px;
+        margin-bottom: 10px;
+        border: 0px;
+        margin-right: 0px;
+    }
+    
+    
+.portfolio-list li .caption {
+	position: absolute;
+	box-sizing: border-box;
+    background: #ffffff;
+	width: 40%;
+    right:0%;
+	
+    height:170px;
+	padding: 10px 10px 0px 10px;
+    
+}
+    
+.award {
+    position: absolute;
+    right:0;
+    left:-146%;
+    }
+
+.caption span {
+    font-size: 0.7rem;
+   
+    
+
+}
+
+.caption h4 {
+    font-size: 0.8rem;
+    margin-top: 70px;
+    margin-bottom: 3px;
+    color:#1e1e1e;
+}
+
+.caption h3 {
+    font-size: 0.9rem;
+    color:#1e1e1e;
+
+}
+
+.button {    
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding:0px 20px;
+    
+    }        
+}
+.button img {
+    max-width: 100%;
+}
+
+.buttom .bth_return {
+    display: block;
+    max-width: 100%;
+    text-align: center;
+    margin-right:0px;
+    padding:0px 20px;
+}
+
+

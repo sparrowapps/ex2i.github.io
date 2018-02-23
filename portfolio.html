@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<meta charset="utf-8">
+		<title>Ex2I</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="./css/reset.css">
+		<link rel="stylesheet" href="./css/portfolio.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="img/favicon_ex2i.ico" type="image/x-icon">
+        <link rel="icon" href="img/favicon_ex2i.ico" type="image/x-icon">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        
+        <script>
+   	     $(function(){
+   	      	var pull=$('#pull');
+   	      	    menu=$('nav ul');
+   	      	    menuHeight=menu.height();   	      
+   	      $(pull).on('click', function(e){
+   	      	e.preventDefault();
+   	      	menu.slideToggle();  
+               $('').hide();
+               $('clearfix').remove();
+              
+   	      }); 
+             
+           
+        /*/ hide menu when clicking on the menu items or the logo
+          $('#pull, nav li a').click(function(){
+           $('nav li').stop().slideUp();
+          });     
+       */
+   
+        /* li의 메뉴들 클릭 시 사라지도록    */     
+    
+       $("nav li, nav li a").click(function(){
+    var windowWidth = $(window).width(); 
+    if (windowWidth < 1164) { 
+      $("nav ul").slideToggle();
+      event.stopPropagation(); 
+    }
+    else {
+    }   
+  });   
+  
+             
+    $(window).resize(function(){
+   	var w=$(window).width();
+   	if(w>600 && menu.is(':hidden'))
+   	{menu.removeAttr('style');}    
+   	 });
+             
+             
+   	  });    
+            
+                
+                     
+            
+    
+/* 스크롤 효과 */            
+            
+    $(document).ready(function(){
+	$('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash;
+	    var $target = $(target);
+
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 900, 'swing', function () {
+	        window.location.hash = target;
+	    });
+
+        
+
+    });       
+        
+        
+});        
+
+   	   </script>
+        
+        
+    </head>
+    <body>
+        
+<!--   header  -->
+<div class="wrapper_navi">
+<div id="header">
+    <!-- <div class="logo2">
+      <a href="ex2i_170531.html"><img src="./main/logo_ex2i.png"></a>
+    </div> -->
+       <nav class="clearfix container">
+          <a id="pull" href="index.html"><img src="img/logo_ex2i.png" alt="ex2i로고"></a>
+   	      
+           <h1 class="logo2">
+             <a href="index.html" class="logo2"><img src="img/logo_ex2i.png" alt="ex2i로고"></a></h1> 
+            <ul class="clearfix">
+          
+   	         <li><a href="index.html#about" class="navmenu">ABOUT</a></li>
+   	         <li><a href="index.html#ability" class="navmenu">ABILITY</a></li>
+             <li><a href="index.html#partner" class="navmenu ">PARTNERS</a></li>
+   	         <li><a href="index.html#contact" class="navmenu">CONTACT</a></li>
+   	         <li><a href="./portfolio.html" class="navmenu menu_active othercolor">PORTFOLIO</a></li>         <li><a href="./icap.html" class="navmenu">ICAP</a></li>   
+   	      </ul> 
+   	  </nav>
+</div>
+</div>
+        
+    <div class="container"> 
+        
+       <h2>EX2I는 모두를<br><span class="bold800">Respect</span>합니다</h2>
+       <img src="./img/line_red.png" alt="라인 선" class="line_red"> 
+        <div class="work">
+        <ul class="portfolio-list clearfix">
+					<li class="port-nepa">
+						<div class="caption">
+                            <span>PC Web / Hybrid App</span>
+                            <h4>NEPA</h4>
+                            <h3>NEPA 홈페이지</h3>
+                            <div class="award"><img src="./img/work/ic_award.png" alt="어워드"></div>
+						</div>
+                        
+					</li>
+					<li class="port-kt">
+						<div class="caption">
+							<span>PC Web / Mobile App</span>
+                            <h4>KT</h4>
+                            <h3>KT 농산물이력정보</h3>
+						</div>
+					</li>
+					<li class="port-onestore">
+						<div class="caption">
+							<span>PC Web / Mobile App</span>
+                            <h4>ONESTORE</h4>
+                            <h3>ONESTORE</h3>
+						</div>
+					</li>
+					<li class="port-olleh">
+						<div class="caption">
+							<span>PC Web</span>
+                            <h4>KT</h4>
+                            <h3>olleh.com 상품소개</h3>
+						</div>
+					</li>
+                    <li class="port-opinet">
+						<div class="caption">
+							<span>PC Web</span>
+                            <h4>한국석유공사</h4>
+                            <h3>OPINET</h3>
+						</div>
+					</li>
+                    <li class="port-dmz">
+						<div class="caption">
+							<span>PC Web</span>
+                            <h4>행정자치부</h4>
+                            <h3>DMZ 평화와 생명의 땅</h3>
+						</div>
+					</li>
+                    <li class="port-ibk">
+						<div class="caption">
+							<span>PC Web</span>
+                            <h4>IBK 투자증권</h4>
+                            <h3>IBK 투자증권 운영</h3>
+						</div>
+					</li>
+                    <li class="port-develpor">
+						<div class="caption">
+							<span>PC Web</span>
+                            <h4>Samsung</h4>
+                            <h3>삼성전자 Developer</h3>
+						</div>
+					</li>
+                    <li class="port-hec">
+						<div class="caption">
+							<span>PC Web</span>
+                            <h4>Samsung</h4>
+                            <h3>삼성 정밀화학 HEC</h3>
+						</div>
+					</li>
+                    <li class="port-eco">
+						<div class="caption">
+							<span>PC Web</span>
+                            <h4>Samsung</h4>
+                            <h3>삼성 정밀화학 ECO Friendly</h3>
+						</div>
+					</li>
+                    <li class="port-enpol">
+						<div class="caption">
+							<span>PC Web</span>
+                            <h4>Samsung</h4>
+                            <h3>삼성 정밀화학 S-Enpol</h3>
+						</div>
+					</li>
+                    <li class="port-design">
+						<div class="caption">
+							<span>PC Web</span>
+                            <h4>서울디자인재단</h4>
+                            <h3>서울디자인재단 UNESCO</h3>
+						</div>
+					</li>
+                    <li class="port-oplinet2">
+						<div class="caption">
+							<span>PC Web </span>
+                            <h4>한국석유공사</h4>
+                            <h3>한국석유공사 OPINET</h3>
+						</div>
+					</li>
+                    <li class="port-lgu">
+						<div class="caption">
+							<span>Hybrid App</span>
+                            <h4>LG U+</h4>
+                            <h3>LG U+ 고객센터</h3>
+						</div>
+					</li>
+                    <li class="port-carlive">
+						<div class="caption">
+							<span>Native App</span>
+                            <h4>SK Telecom</h4>
+                            <h3>SKT carlive</h3>
+						</div>
+					</li>
+                    <li class="port-food">
+						<div class="caption">
+							<span>Mobile App</span>
+                            <h4>Hyundai Green Food</h4>
+                            <h3>현대그린푸드</h3>
+						</div>
+					</li>
+            
+                    <li class="port-mont">
+						<div class="caption">
+							<span>Mobile App</span>
+                            <h4>몬테소리</h4>
+                            <h3>몬테소리홈스쿨</h3>
+						</div>
+					</li>
+                    <li class="port-lc">
+						<div class="caption">
+							<span>Hybrid App</span>
+                            <h4>대교</h4>
+                            <h3>대교 LC</h3>
+						</div>
+					</li>
+                 
+                        
+            
+				</ul>   
+        </div>
+     
+        <div class="button">
+            <div class="btn_return">
+            <a href="./index.html"><img src="./img/work/btn_return.png" alt="회사소개서 다운로드 버튼"></a>
+        </div>
+        </div>
+        
+    </div>
+ 
+<footer>
+    <div class="footercontent">
+       <p class="content">서울특별시 마포구 동교로 23길 28, 보성빌딩 5층</p>
+       <p class="content">Tel. 02) 6925 – 6250</p>
+       <p class="copyright">사업자 등록번호 105-88-12721</p>
+    </div>
+</footer>  
+    </body>
+</html>
